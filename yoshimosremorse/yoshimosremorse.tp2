@@ -1,5 +1,5 @@
 BACKUP ~weidu_external\yoshimosremorse\backup~
-AUTHOR ~Lava Del'Vortel and jmaeq~
+//AUTHOR ~Lava Del'Vortel and jmaeq~
 SUPPORT ~https://www.gibberlings3.net/forums/forum/208-yoshimos-remorse/~
 README ~yoshimosremorse/readme-yr.html~
 VERSION ~v3.2~	
@@ -111,9 +111,9 @@ COPY ~YoshimosRemorse/AREAS~ ~Override~
 //AUDIO
 
 ACTION_IF ("%LANGUAGE%" STR_EQ "Polish") THEN BEGIN
-  LAF HANDLE_AUDIO oggdec_path = ~yoshimosremorse/audio-en~ sox_path = ~yoshimosremorse/audio-en~ audio_path = ~yoshimosremorse/audio-pl~ END
+  LAF HANDLE_AUDIO STR_VAR oggdec_path = ~yoshimosremorse/audio-en~ sox_path = ~yoshimosremorse/audio-en~ audio_path = ~yoshimosremorse/audio-pl~ END
 END ELSE BEGIN // english, russian, chinese
-  LAF HANDLE_AUDIO oggdec_path = ~yoshimosremorse/audio-en~ sox_path = ~yoshimosremorse/audio-en~ audio_path = ~yoshimosremorse/audio-en~ END
+  LAF HANDLE_AUDIO STR_VAR oggdec_path = ~yoshimosremorse/audio-en~ sox_path = ~yoshimosremorse/audio-en~ audio_path = ~yoshimosremorse/audio-en~ END
 END
 
 /////////DIALOGUES
