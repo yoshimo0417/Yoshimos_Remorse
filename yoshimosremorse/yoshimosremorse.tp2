@@ -1,7 +1,8 @@
-BACKUP ~YoshimosRemorse\backup~
+BACKUP ~weidu_external\yoshimosremorse\backup~
 AUTHOR ~Lava Del'Vortel and jmaeq~
-README ~YoshimosRemorse/ReadMe-YR.html~
-VERSION ~v3.1.1~	
+SUPPORT ~https://www.gibberlings3.net/forums/forum/208-yoshimos-remorse/~
+README ~yoshimosremorse/readme-yr.html~
+VERSION ~v3.2~	
 	 
 ALWAYS
   INCLUDE ~YoshimosRemorse/lib/eet.tph~
@@ -58,6 +59,7 @@ LANGUAGE ~Simplified Chinese by Yoshimo0417~ ~Schinese~
 
 BEGIN @1
   REQUIRE_PREDICATE (GAME_IS ~tob BGT bg2ee eet~) @2
+  LABEL ~yoshimos_remorse_main~
 
 //////////////////////////////////////////////////////////////////////////////////
 ////WILSON DOESN'T HAVE HIS BANTER FILE - THAT MAKES HIM SAD! LET'S CHANGE THAT///
@@ -286,7 +288,7 @@ COPY_EXISTING ~interdia.2da~ ~override~
 
 /////////BAMS
 
-COPY ~YoshimosRemorse\BAMS~ ~override\~
+COPY ~YoshimosRemorse\BAMS~ ~override~
 
 /////////ITEMS
 
@@ -332,9 +334,11 @@ END
 BEGIN @59
 REQUIRE_COMPONENT ~YoshimosRemorse.tp2~ ~0~ @58
 SUBCOMPONENT @61
+LABEL ~yoshimos_remorse_dc_at_10~
 COPY ~YoshimosRemorse/CREATURES/YYOSH10.cre~ ~Override/YYosh25.cre~
 
 BEGIN @60
 REQUIRE_COMPONENT ~YoshimosRemorse.tp2~ ~0~ @58
 SUBCOMPONENT @61
+LABEL ~yoshimos_remorse_dc_at_13~
 COPY ~YoshimosRemorse/CREATURES/YYOSH13.cre~ ~Override/YYosh25.cre~
