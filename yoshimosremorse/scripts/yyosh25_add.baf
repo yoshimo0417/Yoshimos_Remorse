@@ -1,0 +1,262 @@
+//initial meeting: XP adjustment for EE 
+/* Level 18 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",18)
+	XPLT(Myself,2500000)
+	XPGT(Myself,2249999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",18)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 17 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",17)
+	XPLT(Myself,2250000)
+	XPGT(Myself,1999999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",17)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 16 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",16)
+	XPLT(Myself,2000000)
+	XPGT(Myself,1749999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",16)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 15 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",15)
+	XPLT(Myself,1750000)
+	XPGT(Myself,1499999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",15)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 14 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",14)
+	XPLT(Myself,1500000)
+	XPGT(Myself,1249999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",14)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 13 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",13)
+	XPLT(Myself,1250000)
+	XPGT(Myself,999999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",13)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 12 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",12)
+	XPLT(Myself,1000000)
+	XPGT(Myself,749999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",12)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 11 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",11)
+	XPLT(Myself,750000)
+	XPGT(Myself,499999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",11)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 10 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",10)
+	XPLT(Myself,500000)
+	XPGT(Myself,249999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",10)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+
+/* Level 9 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",9)
+	XPLT(Myself,250000)
+	XPGT(Myself,124999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",9)	
+		AddXPObject(Myself,125000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 8 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",8)
+	XPLT(Myself,125000)
+	XPGT(Myself,63999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",8)	
+		AddXPObject(Myself,61000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 7 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",7)
+	XPLT(Myself,64000)
+	XPGT(Myself,31999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",7)	
+		AddXPObject(Myself,32000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 6 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",6)
+	XPLT(Myself,32000)
+	XPGT(Myself,15999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",6)	
+		AddXPObject(Myself,16000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 5 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",5)
+	XPLT(Myself,16000)
+	XPGT(Myself,7999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",5)	
+		AddXPObject(Myself,8000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 4 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",4)
+	XPLT(Myself,8000)
+	XPGT(Myself,3999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",4)	
+		AddXPObject(Myself,4000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 3 */
+
+IF
+	InParty(Myself)
+	GlobalLT("Experience","LOCALS",3)
+	XPLT(Myself,4000)
+	XPGT(Myself,1999)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",3)	
+		AddXPObject(Myself,2000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 2 */
+
+IF
+	InParty(Myself)
+	Global("Experience","LOCALS",0)
+	XPLT(Myself,2000)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("Experience","LOCALS",2)	
+		AddXPObject(Myself,2000)
+		SetInterrupt(TRUE)
+END
+

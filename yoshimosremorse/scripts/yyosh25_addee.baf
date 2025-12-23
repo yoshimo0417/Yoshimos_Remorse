@@ -1,0 +1,9 @@
+//initial meeting: XP adjustment for EE 
+IF
+Global("Experience","LOCALS",0)
+CheckStatLT(Myself,2500000,XP)
+THEN
+RESPONSE #100
+SetGlobal("Experience","LOCALS",1)
+ChangeStat(Myself,XP,2500000,SET)
+END

@@ -1,10 +1,11 @@
 BACKUP ~YoshimosRemorse\backup~
 AUTHOR ~Lava Del'Vortel and jmaeq~
 README ~YoshimosRemorse/ReadMe-YR.html~
-VERSION ~v1.1~		 
+VERSION ~v1.2~		 
 ALWAYS
   INCLUDE ~YoshimosRemorse/lib/eet.tph~
-  INCLUDE ~YoshimosRemorse/lib/functions.tph~
+  INCLUDE ~YoshimosRemorse/lib/functions.tph~  
+  INCLUDE ~YoshimosRemorse/lib/extra_regexp_vars.tph~
   ACTION_IF (GAME_IS ~eet~) BEGIN
     OUTER_SET bg2_chapter = 12
   END ELSE BEGIN
@@ -15,10 +16,15 @@ ALWAYS
     OUTER_SPRINT name_source ~bg2_chapter_%i%~
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
+  ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+    OUTER_SPRINT ~YOSHIMO_RACE_WRAITH~ ~ChangeRace("Yoshimo",WRAITH)~
+  END ELSE BEGIN
+    OUTER_SPRINT ~YOSHIMO_RACE_WRAITH~ ~~
+  END
 END
 
 BEGIN ~Yoshimo's Remorse~
-  REQUIRE_PREDICATE (GAME_IS ~bg2 BGT bg2ee eet~) ~This component must be installed on vanilla BG2, BGT, BG2:EE or EET.~
+  REQUIRE_PREDICATE (GAME_IS ~tob BGT bg2ee eet~) ~This component must be installed on vanilla BG2, BGT, BG2:EE or EET.~
 
 //////////////////////////////////////////////////////////////////////////////////
 ////WILSON DOESN'T HAVE HIS BANTER FILE - THAT MAKES HIM SAD! LET'S CHANGE THAT///
@@ -40,7 +46,7 @@ END
 
 /////////PORTRAITS
 
-ACTION_IF GAME_IS ~BG2EE~ THEN BEGIN
+ACTION_IF GAME_IS ~BG2EE eet~ THEN BEGIN
 	COPY ~YoshimosRemorse/PORTRAITS~ ~Override~
 END ELSE BEGIN
 	COPY ~YoshimosRemorse/PORTRAITS/BG2~ ~Override~
@@ -61,12 +67,21 @@ LAF HANDLE_AUDIO END
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/Start.d~
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/YYosh25J.d~
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/YYosh25B.d~
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/YYosh25B_EE.d~
+END
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/YYoshBro.d~
 
 /////////SCRIPTS
 
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYAva.baf~
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYosh25.baf~
+/* XP adjustment in extra files because there is no ChangeStat in classic engine */
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  EXTEND_BOTTOM ~YYosh25.bcs~ ~YoshimosRemorse/SCRIPTS/YYosh25_addEE.baf~ EVALUATE_BUFFER 
+END ELSE BEGIN
+  EXTEND_BOTTOM ~YYosh25.bcs~ ~YoshimosRemorse/SCRIPTS/YYosh25_add.baf~ EVALUATE_BUFFER 
+END
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYosh25d.baf~
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYCut1.baf~
 COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYCut2.baf~
@@ -111,9 +126,12 @@ Saving Throw: None
 This special ability allows Yoshimo's grief and anger to course through his veins and release it in a fury onto the world. He becomes faster and stronger, but each use of this ability takes him further and further away from his redemption, making it harder for him to find inner peace.~
 /////////CREATURES
 
-OUTER_SET wraith_lcase = RESOLVE_STR_REF(~wraith~)
-OUTER_SET wraith_ucase = RESOLVE_STR_REF(~Wraith~)
-APPEND ~racetext.2da~ ~WRAITH   134        %wraith_lcase%       -1         %wraith_ucase%          -1~ UNLESS ~WRAITH~
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  OUTER_SET wraith_lcase = RESOLVE_STR_REF(~wraith~)
+  OUTER_SET wraith_ucase = RESOLVE_STR_REF(~Wraith~)
+  APPEND ~racetext.2da~ ~WRAITH   134        %wraith_lcase%       -1         %wraith_ucase%          -1~ UNLESS ~WRAITH~
+END
+
 
 COPY ~YoshimosRemorse/CREATURES/YYosh25.cre~ ~Override/YYosh25.cre~
   SAY MORALE ~Time for a quick exit, I would say!~ [YYOSHI02]
@@ -171,11 +189,11 @@ SAY NAME2 ~Kagetaro~
 
 //               					    POST_DIALOG_FILE JOIN_DIALOG_FILE DREAM_SCRIPT_FILE 25POST_DIALOG_FILE 25JOIN_DIALOG_FILE 25DREAM_SCRIPT_FILE   25OVERRIDE_SCRIPT_FILE
 COPY_EXISTING ~pdialog.2da~ ~override~
-  REPLACE_TEXTUALLY ~YOSHIMO      YOSHP              YOSHJ             YOSHD          YOSHP              YOSHJ                 YOSHD                 yosh25~
-					~YOSHIMO	  YOSHP              YOSHJ             YOSHD          YYosh25P           YYosh25J              YYosh25D              YYosh25~
+  REPLACE_TEXTUALLY ~YOSHIMO[%tab% %lnl%%mnl%%wnl%]+YOSHP[%tab% %lnl%%mnl%%wnl%]+YOSHJ[%tab% %lnl%%mnl%%wnl%]+YOSHD[%tab% %lnl%%mnl%%wnl%]+YOSHP[%tab% %lnl%%mnl%%wnl%]+YOSHJ[%tab% %lnl%%mnl%%wnl%]+YOSHD[%tab% %lnl%%mnl%%wnl%]+yosh25~
+					~YOSHIMO                  YOSHP                 YOSHJ                 YOSHD                 YYosh25P                 YYosh25J               YYosh25D               YYosh25~
 //         					   FILE      25FILE
 COPY_EXISTING ~interdia.2da~ ~override~
-  REPLACE_TEXTUALLY ~YOSHIMO   BYOSHIM   BYOSHIM~
+  REPLACE_TEXTUALLY ~YOSHIMO[%tab% %lnl%%mnl%%wnl%]+BYOSHIM[%tab% %lnl%%mnl%%wnl%]+BYOSHIM~
 					~YOSHIMO   BYOSHIM   YYOSH25B~
 
 /////////BAMS

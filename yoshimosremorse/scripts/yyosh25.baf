@@ -14,14 +14,7 @@ MoveGlobal("AR4500","YOSHIMO",[1600.1100])
 END
 
 //initial meeting
-IF
-Global("Experience","LOCALS",0)
-CheckStatLT(Myself,2500000,XP)
-THEN
-RESPONSE #100
-SetGlobal("Experience","LOCALS",1)
-ChangeStat(Myself,XP,2500000,SET)
-END
+/* XP adjustment: moved into separate files */
 
 IF
 Global("Experience","LOCALS",0)
