@@ -101,18 +101,10 @@ COPY ~YoshimosRemorse/AREAS~ ~Override~
 //AUDIO
 
 ACTION_IF ("%LANGUAGE%" STR_EQ "Polish") THEN BEGIN
-  COPY ~YoshimosRemorse/audio-pl~ ~YoshimosRemorse/audio~
+  LAF HANDLE_AUDIO oggdec_path = ~yoshimosremorse/audio-en~ sox_path = ~yoshimosremorse/audio-en~ audio_path = ~yoshimosremorse/audio-pl~ END
+END ELSE BEGIN // english, russian, chinese
+  LAF HANDLE_AUDIO oggdec_path = ~yoshimosremorse/audio-en~ sox_path = ~yoshimosremorse/audio-en~ audio_path = ~yoshimosremorse/audio-en~ END
 END
-
-ACTION_IF ("%LANGUAGE%" STR_EQ "Russian") THEN BEGIN
-  COPY ~YoshimosRemorse/audio-en~ ~YoshimosRemorse/audio~
-END
-
-ACTION_IF ("%LANGUAGE%" STR_EQ "English") THEN BEGIN
-  COPY ~YoshimosRemorse/audio-en~ ~YoshimosRemorse/audio~
-END
-
-LAF HANDLE_AUDIO END
 
 /////////DIALOGUES
 
