@@ -1,0 +1,14 @@
+IF
+True()
+THEN RESPONSE #100
+CutSceneId(Player1)
+StartCutSceneMode()
+Wait(1)
+CreateVisualEffect("YYCut2",[2050.1160])
+Wait(3)
+CreateCreature("YYosh25",[2050.1160],0) 
+FaceObject(Player1)
+Wait(1)
+SetGlobal("YYStart","GLOBAL",4)
+EndCutSceneMode()
+END

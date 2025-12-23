@@ -1,0 +1,137 @@
+BACKUP ~YoshimosRemorse\backup~
+AUTHOR ~Lava Del'Vortel and jmaeq~
+README ~YoshimosRemorse/ReadMe-YR.html~
+VERSION ~v1.0~		 
+BEGIN ~Yoshimo's Remorse~
+
+//////////////////////////////////////////////////////////////////////////////////
+////WILSON DOESN'T HAVE HIS BANTER FILE - THAT MAKES HIM SAD! LET'S CHANGE THAT///
+//////////////////////////////////////////////////////////////////////////////////
+
+
+ACTION_IF FILE_EXISTS_IN_GAME ~wilson.dlg~ THEN BEGIN
+ PRINT ~Wilson detected - Wilson interdia.2da append - set Wilsons's banter file (BWILSON & BWILSO25)~
+    APPEND ~interdia.2da~ ~WILSON BWILSON BWILSO25~
+    UNLESS ~WILSON~
+   ACTION_IF NOT (FILE_EXISTS_IN_GAME ~BWILSON.dlg~) THEN BEGIN
+   COMPILE ~%MOD_FOLDER%/dialogues/BWILSONFix.d~
+  END
+   ACTION_IF NOT (FILE_EXISTS_IN_GAME ~BWILSO25.dlg~) THEN BEGIN
+   COMPILE ~%MOD_FOLDER%/dialogues/BWILSO25Fix.d~
+  END
+END
+
+
+/////////PORTRAITS
+
+ACTION_IF GAME_IS ~BG2EE~ THEN BEGIN
+	COPY ~YoshimosRemorse/PORTRAITS~ ~Override~
+END ELSE BEGIN
+	COPY ~YoshimosRemorse/PORTRAITS/BG2~ ~Override~
+END
+
+/////////AREAS
+
+COPY ~YoshimosRemorse/AREAS~ ~Override~
+
+/////////DIALOGUES
+
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/Start.d~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/YYosh25J.d~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/YYosh25B.d~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/DIALOGUES/YYoshBro.d~
+
+/////////SCRIPTS
+
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYAva.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYosh25.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYosh25d.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYCut1.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYCut2.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYBro.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYCut3.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYCut4.baf~
+COMPILE EVALUATE_BUFFER ~YoshimosRemorse/SCRIPTS/YYAR01.baf~
+
+EXTEND_TOP ~AR4500.bcs~  ~YoshimosRemorse/SCRIPTS/AR4500.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR5500.bcs~  ~YoshimosRemorse/SCRIPTS/AR5500.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR6200.bcs~  ~YoshimosRemorse/SCRIPTS/AR6200.baf~ EVALUATE_BUFFER
+
+/////////EPILOGUES
+
+COPY ~YoshimosRemorse/EPILOGUES/YYoshE.2da~ ~override/YYosh01.2da~
+REPLACE ~99999~ ~After the final battle in the Throne of Bhaal, dread filled what was left of Yoshimo's soul as the Messenger of Ilmater loomed before him. The rogue struggled and fought with every fibre of his being as he was taken away. They say that his screams of anguish could be heard throughout the Nine Hells and into the world of the living during the darkest and dreariest of nights. If there was one thing that had taken root in the rumors swirling around about his punishment, it was Yoshimo's fighting spirit - his desire to release himself from the bitter end. However, in the end, he managed to escape the arms of the Messenger but what was released back into the world was no longer Yoshimo, but a spirit too bitter and too angry to be called by its old name. The wraith would walk all the Realms on a never-ending searching to find peace... but all he achieved was the stoking of the deep, firey anger burning within himself. He never got another chance to find serenity, and he never found the road to redemption.~
+
+COPY ~YoshimosRemorse/EPILOGUES/YYoshE.2da~ ~override/YYosh02.2da~
+REPLACE ~99999~ ~After the final battle in the Throne of Bhaal, a sense of relief washed over Yoshimo as the Messenger of Ilmater appeared before him. He did not struggle, but embraced the feelings swirling within him. His form felt somehow... lighter, his mind at ease. Then, the sudden realization struck the former bounty hunter, something he was afraid he would never be able to do: forgive himself. Although the rogue wished to hear words of approval from <CHARNAME>'s lips and the desire to know whether his family, including his brother - Kagetaro - would remember him as a hero, it was said that he achieved more than his wishes. He had found peace.~
+
+COPY ~YoshimosRemorse/EPILOGUES/YYoshE.2da~ ~override/YYosh03.2da~ 
+REPLACE ~99999~ ~After the final battle in the Throne of Bhaal, a sudden realization struck the former bounty hunter - the confrontation of the final consequences of his actions. As the Messenger of Ilmater came for him, the rogue pleaded for more time, but his pleas were left unanswered. Time was neither his friend or foe and as it passed, he knew that no amount of begging or what he truly desired would ever be fulfilled. However, the rogue was stubborn and refused to let this be the end. He wished to hear words of approval from <CHARNAME>, he wanted to know that his family, including his brother - Kagetaro - would remember him as a hero, but he never found the truth to his questions.~
+
+/////////SPELL
+
+COPY ~YoshimosRemorse/SPELLS/YYSHPCH.spl~ ~Override~
+SAY NAME1 ~Grief and Anger~
+SAY NAME2 ~Grief and Anger~
+SAY UNIDENTIFIED_DESC ~Grief and Anger
+(Alteration)
+
+Level: 1
+Range: 0
+Duration: 5 rounds
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This special ability allows Yoshimo's grief and anger to course through his veins and release it in a fury onto the world. He becomes faster and stronger, but each use of this ability takes him further and further away from his redemption, making it harder for him to find inner peace.~
+/////////CREATURES
+
+COPY ~YoshimosRemorse/CREATURES/YYosh25.cre~ ~Override/YYosh25.cre~
+
+COPY ~YoshimosRemorse/CREATURES/YYava.cre~ ~Override/YYava.cre~
+SAY NAME1 ~Messenger~
+SAY NAME2 ~Messenger~
+
+COPY ~YoshimosRemorse/CREATURES/yyoshbro.cre~ ~Override/yyoshbro.cre~
+SAY NAME1 ~Kagetaro~
+SAY NAME2 ~Kagetaro~
+
+APPEND ~pdialog.2da~
+~YYosh25 YYosh25P YYosh25J YYosh25D YYosh25P YYosh25J YYosh25D YYosh25~ 
+UNLESS ~YYosh25~
+
+APPEND ~interdia.2da~
+~YYosh25 YYosh25B YYosh25B~
+UNLESS ~YYosh25~
+
+/////////BAMS
+
+COPY ~YoshimosRemorse\BAMS~ ~override\~
+
+/////////ITEMS
+
+COPY ~YoshimosRemorse/ITEMS/YYSwo1.itm~ ~Override/YYSwo1.itm~
+SAY NAME1 ~Katana "Yoshimo's Doubt"~
+SAY NAME2 ~Katana "Yoshimo's Doubt"~
+SAY DESC ~This magic katana is Yoshimo's personal item. It seems to be an astral copy of the sword Yoshimo used in most battles. Even though it doesn't seem as any usual metal sword, it is mostly effective. It seems to be covered with some white radiance.
+
+STATISTICS:
+
+Special: is considered a +5 weapon
+10% chance that user, on a succesful hit, will be granted +1 strength bonus for 30 seconds
+
+THAC0: +5 bonus
+Damage:  1D10 + 3
+Damage type:  slashing
+Weight:  5
+Speed Factor: 3
+Proficiency Type: Katana
+Type:  1-handed
+Usable By:
+ Yoshimo~
+
+COPY ~YoshimosRemorse/ITEMS/YYCLO1.itm~ ~Override/YYCLO1.itm~
+SAY NAME1 ~Ghostly Cloak~
+SAY NAME2 ~Ghostly Cloak~
+SAY DESC ~This ghostly cloak seems to be made of some material you are unable to touch in any way.~
+

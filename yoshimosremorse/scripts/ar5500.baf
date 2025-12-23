@@ -1,0 +1,10 @@
+IF
+   InParty("YYosh25")
+   Global("YYoshBroExists","GLOBAL",0)
+   !Global("YoshimoRomanceActive","GLOBAL",2)
+   !Global("YoshimoRomanceActive","GLOBAL",3)
+THEN 
+RESPONSE #100
+   SetGlobal("YYoshBroExists","GLOBAL",1)
+   CreateCreature("YYoshBro", [2387.1508], 13)
+END

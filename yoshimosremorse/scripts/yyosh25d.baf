@@ -1,0 +1,24 @@
+IF
+InParty(Myself)
+CombatCounter(0)
+See(Player1)
+!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("YYoshiWasLoved","GLOBAL",1)
+RealGlobalTimerExpired("YYTime","GLOBAL")
+Global("YYTalksLoved","GLOBAL",5)
+THEN
+RESPONSE #100
+StartDialog("YYosh25J",Player1)
+END
+
+//Avatar Second Encounter
+
+IF
+See(Player1)
+Global("YYAvaSecondEncounter","GLOBAL",1)
+GlobalTimerExpired("YYAvaSecondTime","GLOBAL")
+THEN
+RESPONSE #100
+StartCutScene("YYCut3")
+END

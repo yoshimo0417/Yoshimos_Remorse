@@ -1,0 +1,28 @@
+IF
+See([PC])
+Global("YYStart","GLOBAL",1)
+THEN
+RESPONSE #100
+StartCutScene("YYCut1")
+END
+
+IF
+Global("YYStart","GLOBAL",2)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("YYAvaSecondEncounter","GLOBAL",2)
+THEN 
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END 
+
+IF
+Global("YYAvaSecondEncounter","GLOBAL",3)
+THEN
+RESPONSE #100
+StartCutScene("YYCut4")
+END

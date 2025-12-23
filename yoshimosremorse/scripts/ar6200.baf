@@ -1,0 +1,42 @@
+//Negative Epilogue
+IF
+Global("StartEndBios","AR6200",1)
+InParty("YYosh25")
+GlobalLT("YYInflu","GLOBAL",0)
+Global("YYoshBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("YYoshBio","GLOBAL",1)
+TextScreen("YYosh01")
+SmallWait(1)
+Continue()
+END
+
+//Positive Epilogue
+IF
+Global("StartEndBios","AR6200",1)
+InParty("YYosh25")
+GlobalGT("YYInflu","GLOBAL",10)
+Global("YYoshBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("YYoshBio","GLOBAL",1)
+TextScreen("YYosh02")
+SmallWait(1)
+Continue()
+END
+
+//Neutral Epilogue
+IF
+Global("StartEndBios","AR6200",1)
+InParty("YYosh25")
+GlobalLT("YYInflu","GLOBAL",11)
+GlobalGT("YYInflu","GLOBAL",-1)
+Global("YYoshBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("YYoshBio","GLOBAL",1)
+TextScreen("YYosh03")
+SmallWait(1)
+Continue()
+END

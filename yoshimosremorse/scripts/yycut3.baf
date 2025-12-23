@@ -1,0 +1,23 @@
+IF
+True()
+THEN RESPONSE #100
+CutSceneId(Player1)
+StartCutSceneMode()
+MoveViewObject(Player1,INSTANT)
+StorePartyLocations()
+FadeToColor([40.0],0)
+Wait(4)
+//MoveToPoint([1012.1094])
+LeaveAreaLUA("YYAR01","",[1012.1094],0)
+MoveViewPoint([1012.1094],INSTANT)
+FaceObject("YYAva")
+SetGlobal("YYAvaSecondEncounter","GLOBAL",2)
+MoveViewObject(Player1,INSTANT)
+FadeFromColor([30.0],0)
+Wait(2)
+CreateVisualEffect("spstrmva",[825.950])
+Wait(2)
+CreateCreature("YYAva",[825.950],0) 
+EndCutSceneMode()
+ActionOverride("YYAva",StartDialogueNoSet(Player1))
+END

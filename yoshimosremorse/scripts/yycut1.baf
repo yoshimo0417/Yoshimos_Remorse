@@ -1,0 +1,19 @@
+IF
+True()
+THEN RESPONSE #100
+CutSceneId(Player1)
+StartCutSceneMode()
+Wait(1)
+MoveViewPoint([1990.1260],INSTANT)
+MoveToPoint([1990.1260])
+ActionOverride(Player2,MoveToPoint([1890.1310]))
+ActionOverride(Player3,MoveToPoint([1930.1310]))
+ActionOverride(Player4,MoveToPoint([1970.1320]))
+ActionOverride(Player5,MoveToPoint([2020.1310]))
+ActionOverride(Player6,MoveToPoint([2070.1300]))
+Wait(4)
+FaceObject("YYAva")
+Wait(1)
+SetGlobal("YYStart","GLOBAL",2)
+EndCutSceneMode()
+END
