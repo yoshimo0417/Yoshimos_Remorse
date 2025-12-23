@@ -1,7 +1,7 @@
 BACKUP ~YoshimosRemorse\backup~
 AUTHOR ~Lava Del'Vortel and jmaeq~
 README ~YoshimosRemorse/ReadMe-YR.html~
-VERSION ~v3.1~	
+VERSION ~v3.1.1~	
 	 
 ALWAYS
   INCLUDE ~YoshimosRemorse/lib/eet.tph~
