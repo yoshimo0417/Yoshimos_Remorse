@@ -1,7 +1,8 @@
 BACKUP ~YoshimosRemorse\backup~
 AUTHOR ~Lava Del'Vortel and jmaeq~
 README ~YoshimosRemorse/ReadMe-YR.html~
-VERSION ~v1.2~		 
+VERSION ~v1.3~	
+	 
 ALWAYS
   INCLUDE ~YoshimosRemorse/lib/eet.tph~
   INCLUDE ~YoshimosRemorse/lib/functions.tph~  
@@ -23,8 +24,30 @@ ALWAYS
   END
 END
 
-BEGIN ~Yoshimo's Remorse~
-  REQUIRE_PREDICATE (GAME_IS ~tob BGT bg2ee eet~) ~This component must be installed on vanilla BG2, BGT, BG2:EE or EET.~
+AUTO_TRA ~YoshimosRemorse\%s~
+
+ALWAYS
+  // No exception, everything needs to be converted
+  ACTION_DEFINE_ARRAY yremorsenoconvert BEGIN END
+
+  // any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+  ACTION_DEFINE_ARRAY yremorsereload BEGIN setup END
+
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charsets = 1
+    STR_VAR
+      tra_path = EVAL ~%MOD_FOLDER%/language~
+      noconvert_array = yremorsenoconvert
+      reload_array = yremorsereload
+  END
+END
+
+AUTO_TRA ~YoshimosRemorse\Language\%s~
+LANGUAGE ~English~ ~English~ ~%MOD_FOLDER%/Language/English/setup.tra~
+
+BEGIN @1
+  REQUIRE_PREDICATE (GAME_IS ~tob BGT bg2ee eet~) @2
 
 //////////////////////////////////////////////////////////////////////////////////
 ////WILSON DOESN'T HAVE HIS BANTER FILE - THAT MAKES HIM SAD! LET'S CHANGE THAT///
@@ -32,7 +55,7 @@ BEGIN ~Yoshimo's Remorse~
 
 
 ACTION_IF FILE_EXISTS_IN_GAME ~wilson.dlg~ THEN BEGIN
- PRINT ~Wilson detected - Wilson interdia.2da append - set Wilsons's banter file (BWILSON & BWILSO25)~
+ PRINT @3
     APPEND ~interdia.2da~ ~WILSON BWILSON BWILSO25~
     UNLESS ~WILSON~
    ACTION_IF NOT (FILE_EXISTS_IN_GAME ~BWILSON.dlg~) THEN BEGIN
@@ -99,31 +122,21 @@ EXTEND_TOP ~AR6200.bcs~  ~YoshimosRemorse/SCRIPTS/AR6200.baf~ EVALUATE_BUFFER
 /////////EPILOGUES
 
 COPY ~YoshimosRemorse/EPILOGUES/YYoshE.2da~ ~override/YYosh01.2da~
-REPLACE ~99999~ ~After the final battle in the Throne of Bhaal, dread filled what was left of Yoshimo's soul as the Messenger of Ilmater loomed before him. The rogue struggled and fought with every fibre of his being as he was taken away. They say that his screams of anguish could be heard throughout the Nine Hells and into the world of the living during the darkest and dreariest of nights. If there was one thing that had taken root in the rumors swirling around about his punishment, it was Yoshimo's fighting spirit - his desire to release himself from the bitter end. However, in the end, he managed to escape the arms of the Messenger but what was released back into the world was no longer Yoshimo, but a spirit too bitter and too angry to be called by its old name. The wraith would walk all the Realms on a never-ending searching to find peace... but all he achieved was the stoking of the deep, firey anger burning within himself. He never got another chance to find serenity, and he never found the road to redemption.~
+REPLACE ~99999~ @4
 
 COPY ~YoshimosRemorse/EPILOGUES/YYoshE.2da~ ~override/YYosh02.2da~
-REPLACE ~99999~ ~After the final battle in the Throne of Bhaal, a sense of relief washed over Yoshimo as the Messenger of Ilmater appeared before him. He did not struggle, but embraced the feelings swirling within him. His form felt somehow... lighter, his mind at ease. Then, the sudden realization struck the former bounty hunter, something he was afraid he would never be able to do: forgive himself. Although the rogue wished to hear words of approval from <CHARNAME>'s lips and the desire to know whether his family, including his brother - Kagetaro - would remember him as a hero, it was said that he achieved more than his wishes. He had found peace.~
+REPLACE ~99999~ @5
 
 COPY ~YoshimosRemorse/EPILOGUES/YYoshE.2da~ ~override/YYosh03.2da~ 
-REPLACE ~99999~ ~After the final battle in the Throne of Bhaal, a sudden realization struck the former bounty hunter - the confrontation of the final consequences of his actions. As the Messenger of Ilmater came for him, the rogue pleaded for more time, but his pleas were left unanswered. Time was neither his friend or foe and as it passed, he knew that no amount of begging or what he truly desired would ever be fulfilled. However, the rogue was stubborn and refused to let this be the end. He wished to hear words of approval from <CHARNAME>, he wanted to know that his family, including his brother - Kagetaro - would remember him as a hero, but he never found the truth to his questions.~
+REPLACE ~99999~ @6
 
 /////////SPELL
 
 COPY ~YoshimosRemorse/SPELLS/YYSETIT.spl~ ~Override~
 COPY ~YoshimosRemorse/SPELLS/YYSHPCH.spl~ ~Override~
-SAY NAME1 ~Grief and Anger~
-SAY NAME2 ~Grief and Anger~
-SAY UNIDENTIFIED_DESC ~Grief and Anger
-(Alteration)
-
-Level: 1
-Range: 0
-Duration: 5 rounds
-Casting Time: 1
-Area of Effect: Special
-Saving Throw: None
-
-This special ability allows Yoshimo's grief and anger to course through his veins and release it in a fury onto the world. He becomes faster and stronger, but each use of this ability takes him further and further away from his redemption, making it harder for him to find inner peace.~
+SAY NAME1 @7
+SAY NAME2 @7
+SAY UNIDENTIFIED_DESC @8
 /////////CREATURES
 
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
@@ -134,50 +147,50 @@ END
 
 
 COPY ~YoshimosRemorse/CREATURES/YYosh25.cre~ ~Override/YYosh25.cre~
-  SAY MORALE ~Time for a quick exit, I would say!~ [YYOSHI02]
-  SAY HAPPY ~Things are going well for us, yes? It's a dangerous path, but we manage well for ourselves.~ [YYOSHI03]
-  SAY UNHAPPY_ANNOYED ~I'm not worried. I am sure these... setbacks are only temporary.~ [YYOSHI04]
-  SAY UNHAPPY_SERIOUS ~You had best alter your thinking, my friend, or you can forget about the company of Yoshimo!~ [YYOSHI05]
-  SAY UNHAPPY_BREAKING_POINT ~Very well. If you will not listen to sense, I have no compelling reason to remain.~ [YYOSHI06]
-  SAY LEADER ~An odd choice. Have you been hit in the head with a rock as of late? I? In the front? Well, it is your call...~ [YYOSHI07]
-  SAY TIRED ~I must have rest soon, my friend. I have no wish to be weary when my skills call for careful concentration.~ [YYOSHI08]
-  SAY BORED ~Hm! It is either feast or famine with you. We are either hurried beyond endurance or bored witless, it seems.~ [YYOSHI09]
-  SAY BATTLE_CRY1 ~Pay attention... you will get no second chance!~ [YYOSHI10]
-  SAY BATTLE_CRY2 ~Fear is for those of no confidence!~ [YYOSHI11]
-  SAY BATTLE_CRY3 ~KAI!~ [YYOSHI12]
+  SAY MORALE @11
+  SAY HAPPY @12
+  SAY UNHAPPY_ANNOYED @13
+  SAY UNHAPPY_SERIOUS @14
+  SAY UNHAPPY_BREAKING_POINT @15
+  SAY LEADER @16
+  SAY TIRED @17
+  SAY BORED @18
+  SAY BATTLE_CRY1 @19
+  SAY BATTLE_CRY2 @20
+  SAY BATTLE_CRY3 @21
   SAY BATTLE_CRY4 ~~
   SAY BATTLE_CRY5 ~~
-  SAY DAMAGE ~~ [YYOSHI13]
-  SAY DYING ~~ [YYOSHI14]
-  SAY HURT ~Augh! A little help here...~ [YYOSHI15]
-  SAY AREA_FOREST ~My thieving skills will be of little use here. What wealth does a bear drop in the woods?~ [YYOSHI16]
-  SAY AREA_CITY ~Ah, yes, the city. With all its people and their accumulated wealth, yes?~ [YYOSHI17]
-  SAY AREA_DUNGEON ~Be doubly careful. I'm sure all manner of stupid mousetraps await our toes in the dark.~ [YYOSHI18]
-  SAY AREA_DAY ~What do they say... about daylight and thieves? Oil and water?~ [YYOSHI19]
-  SAY AREA_NIGHT ~Ahhh. My skills are at their best while under this blanket of darkness, my friend.~ [YYOSHI20]
-  SAY SELECT_COMMON1 ~I am ready, I think.~ [YYOSHI21]
-  SAY SELECT_COMMON2 ~What do you need? I am skilled in avoidance.~ [YYOSHI22]
-  SAY SELECT_COMMON3 ~You require my counsel, yes?~ [YYOSHI23]
-  SAY SELECT_COMMON4 ~Where shall I display my skill and expertise?~ [YYOSHI24]
-  SAY SELECT_COMMON5 ~If memory serves...~ [YYOSHI25]
-  SAY SELECT_COMMON6 ~Sou desu ne?~ [YYOSHI26]
-  SAY SELECT_ACTION1 ~I can dance on the head of a pin as well.~ [YYOSHI27]
-  SAY SELECT_ACTION2 ~Fleet of foot and all that.~ [YYOSHI28]
-  SAY SELECT_ACTION3 ~Yoshimo is willing.~ [YYOSHI29]
-  SAY SELECT_ACTION4 ~You're right behind me, right?~ [YYOSHI30]
-  SAY SELECT_ACTION5 ~Very well. Hai-ya.~ [YYOSHI31]
-  SAY SELECT_ACTION6 ~Yokatta.~ [YYOSHI32]
-  SAY SELECT_ACTION7 ~Nothing dangerous, I would hope.~ [YYOSHI33]
-  SAY SELECT_RARE1 ~Whatever you need, I do it well.~ [YYOSHI34]
-  SAY SELECT_RARE2 ~Haiii-ya! Heh, the tourists love that stuff.~ [YYOSHI35]
-  SAY CRITICAL_HIT ~Kaiii! ...Yeah!~ [YYOSHI36]
-  SAY CRITICAL_MISS ~Embarrassing!~ [YYOSHI37]
-  SAY TARGET_IMMUNE ~I hit... to no effect?~ [YYOSHI38]
-  SAY INVENTORY_FULL ~I must apologize, but I can carry no more. I have set your item upon the ground.~ [YYOSHI39]
-  SAY HIDDEN_IN_SHADOWS ~I have made something mine, and none are the wiser.~ [YYOSHI40]
-  SAY PICKED_POCKET ~All the world is blind to my passing.~ [YYOSHI41]
-  SAY SET_A_TRAP ~My magic is lost!~ [YYOSHI42]
-  SAY SPELL_DISRUPTED ~A trap most devious for the careless of foot.~ [YYOSHI43]
+  SAY DAMAGE @22
+  SAY DYING @23
+  SAY HURT @24
+  SAY AREA_FOREST @25
+  SAY AREA_CITY @26
+  SAY AREA_DUNGEON @27
+  SAY AREA_DAY @28
+  SAY AREA_NIGHT @29
+  SAY SELECT_COMMON1 @30
+  SAY SELECT_COMMON2 @31
+  SAY SELECT_COMMON3 @32
+  SAY SELECT_COMMON4 @33
+  SAY SELECT_COMMON5 @34
+  SAY SELECT_COMMON6 @35
+  SAY SELECT_ACTION1 @36
+  SAY SELECT_ACTION2 @37
+  SAY SELECT_ACTION3 @38
+  SAY SELECT_ACTION4 @39
+  SAY SELECT_ACTION5 @40
+  SAY SELECT_ACTION6 @41
+  SAY SELECT_ACTION7 @42
+  SAY SELECT_RARE1 @43
+  SAY SELECT_RARE2 @44
+  SAY CRITICAL_HIT @45
+  SAY CRITICAL_MISS @46
+  SAY TARGET_IMMUNE @47
+  SAY INVENTORY_FULL @48
+  SAY HIDDEN_IN_SHADOWS @49
+  SAY PICKED_POCKET @50
+  SAY SET_A_TRAP @51
+  SAY SPELL_DISRUPTED @52
 
 COPY ~YoshimosRemorse/CREATURES/YYava.cre~ ~Override/YYava.cre~
 SAY NAME1 ~Messenger~
@@ -203,33 +216,14 @@ COPY ~YoshimosRemorse\BAMS~ ~override\~
 /////////ITEMS
 
 COPY ~YoshimosRemorse/ITEMS/YYSwo1.itm~ ~Override/YYSwo1.itm~
-SAY NAME1 ~Katana: "Yoshimo's Doubt"~
-SAY NAME2 ~Katana: "Yoshimo's Doubt"~
-SAY DESC ~This magic katana is Yoshimo's personal item. It seems to be an astral copy of the sword Yoshimo used in most battles. Even though it doesn't seem as any usual metal sword, it is mostly effective. It seems to be covered with some white radiance.
-
-STATISTICS:
-
-Combat abilities:
-- 10% chance that user, on a succesful hit, will be granted +1 strength bonus for 30 seconds
-
-THAC0: +5 bonus, strikes as a +5 weapon
-Damage:  1D10 + 3
-Damage type:  slashing
-Weight:  5
-Speed Factor: 3
-Proficiency Type: Katana
-Type:  1-handed
-Usable by:
-Yoshimo~
+SAY NAME1 @53
+SAY NAME2 @53
+SAY DESC @54
 
 COPY ~YoshimosRemorse/ITEMS/YYCLO1.itm~ ~Override/YYCLO1.itm~
-SAY NAME1 ~Ghostly Cloak~
-SAY NAME2 ~Ghostly Cloak~
-SAY DESC ~This ghostly cloak seems to be made of some material you are unable to touch in any way.
-
-STATISTICS:
-
-Weight: 0~
+SAY NAME1 @55
+SAY NAME2 @55
+SAY DESC @56
 
 ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
 COPY_EXISTING ~YYSwo1.itm~ ~Override~
@@ -240,24 +234,11 @@ COPY_EXISTING ~YYSwo1.itm~ ~Override~
 	  timing = 2
 	  parameter2 = 11
 	  power = 1
-	  special = RESOLVE_STR_REF (~Yoshimo~)
+	  special = RESOLVE_STR_REF ( ~Yoshimo~ )
 	STR_VAR
 	  resource = YOSHIMO
 END
-SAY DESC ~This magic katana is Yoshimo's personal item. It seems to be an astral copy of the sword Yoshimo used in most battles. Even though it doesn't seem as any usual metal sword, it is mostly effective. It seems to be covered with some white radiance.
-
-STATISTICS:
-
-Combat abilities:
-- 10% chance that user, on a succesful hit, will be granted +1 strength bonus for 30 seconds
-
-THAC0: +5 bonus, strikes as a +5 weapon
-Damage:  1D10 + 3
-Damage type:  slashing
-Weight:  5
-Speed Factor: 3
-Proficiency Type: Katana
-Type:  1-handed~
+SAY DESC @57
 
 COPY_EXISTING ~YYCLO1.itm~ ~Override~
   LPF ADD_ITEM_EQEFFECT
@@ -273,12 +254,12 @@ COPY_EXISTING ~YYCLO1.itm~ ~Override~
 END
 END
 
-BEGIN ~Bounty Hunter 10 / Fighter~
-REQUIRE_COMPONENT ~YoshimosRemorse.tp2~ ~0~ ~This component requires Yoshimo's Remorse to be installed~
-SUBCOMPONENT ~Yoshimo's Remorse: Fighter/Thief Dual-Class (Only if Yoshimo was never recruited before)~
+BEGIN @59
+REQUIRE_COMPONENT ~YoshimosRemorse.tp2~ ~0~ @58
+SUBCOMPONENT @61
 COPY ~YoshimosRemorse/CREATURES/YYOSH10.cre~ ~Override/YYosh25.cre~
 
-BEGIN ~Bounty Hunter 13 / Fighter~
-REQUIRE_COMPONENT ~YoshimosRemorse.tp2~ ~0~ ~This component requires Yoshimo's Remorse to be installed~
-SUBCOMPONENT ~Yoshimo's Remorse: Fighter/Thief Dual-Class (Only if Yoshimo was never recruited before)~
+BEGIN @60
+REQUIRE_COMPONENT ~YoshimosRemorse.tp2~ ~0~ @58
+SUBCOMPONENT @61
 COPY ~YoshimosRemorse/CREATURES/YYOSH13.cre~ ~Override/YYosh25.cre~

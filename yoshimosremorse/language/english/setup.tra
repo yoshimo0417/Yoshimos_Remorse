@@ -1,0 +1,103 @@
+@1 = ~Yoshimo's Remorse~
+@2 = ~This component must be installed on vanilla BG2, BGT, BG2:EE or EET.~
+@3 = ~Wilson detected - Wilson interdia.2da append - set Wilsons's banter file (BWILSON & BWILSO25)~
+@4 = ~After the final battle in the Throne of Bhaal, dread filled what was left of Yoshimo's soul as the Messenger of Ilmater loomed before him. The rogue struggled and fought with every fibre of his being as he was taken away. They say that his screams of anguish could be heard throughout the Nine Hells and into the world of the living during the darkest and dreariest of nights. If there was one thing that had taken root in the rumors swirling around about his punishment, it was Yoshimo's fighting spirit - his desire to release himself from the bitter end. However, in the end, he managed to escape the arms of the Messenger but what was released back into the world was no longer Yoshimo, but a spirit too bitter and too angry to be called by its old name. The wraith would walk all the Realms on a never-ending searching to find peace... but all he achieved was the stoking of the deep, firey anger burning within himself. He never got another chance to find serenity, and he never found the road to redemption.~
+@5 = ~After the final battle in the Throne of Bhaal, a sense of relief washed over Yoshimo as the Messenger of Ilmater appeared before him. He did not struggle, but embraced the feelings swirling within him. His form felt somehow... lighter, his mind at ease. Then, the sudden realization struck the former bounty hunter, something he was afraid he would never be able to do: forgive himself. Although the rogue wished to hear words of approval from <CHARNAME>'s lips and the desire to know whether his family, including his brother - Kagetaro - would remember him as a hero, it was said that he achieved more than his wishes. He had found peace.~
+@6 = ~After the final battle in the Throne of Bhaal, a sudden realization struck the former bounty hunter - the confrontation of the final consequences of his actions. As the Messenger of Ilmater came for him, the rogue pleaded for more time, but his pleas were left unanswered. Time was neither his friend or foe and as it passed, he knew that no amount of begging or what he truly desired would ever be fulfilled. However, the rogue was stubborn and refused to let this be the end. He wished to hear words of approval from <CHARNAME>, he wanted to know that his family, including his brother - Kagetaro - would remember him as a hero, but he never found the truth to his questions.~
+@7 = ~Grief and Anger~
+@8 =~Grief and Anger
+(Alteration)
+
+Level: 1
+Range: 0
+Duration: 5 rounds
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This special ability allows Yoshimo's grief and anger to course through his veins and release it in a fury onto the world. He becomes faster and stronger, but each use of this ability takes him further and further away from his redemption, making it harder for him to find inner peace.~
+@9 = ~wraith~
+@10 = ~Wraith~
+@11 = ~Time for a quick exit, I would say!~ [YYOSHI02]
+@12 = ~Things are going well for us, yes? It's a dangerous path, but we manage well for ourselves.~ [YYOSHI03]
+@13 = ~I'm not worried. I am sure these... setbacks are only temporary.~ [YYOSHI04]
+@14 = ~You had best alter your thinking, my friend, or you can forget about the company of Yoshimo!~ [YYOSHI05] 
+@15 = ~Very well. If you will not listen to sense, I have no compelling reason to remain.~ [YYOSHI06]
+@16 = ~An odd choice. Have you been hit in the head with a rock as of late? I? In the front? Well, it is your call...~ [YYOSHI07]
+@17 = ~I must have rest soon, my friend. I have no wish to be weary when my skills call for careful concentration.~ [YYOSHI08]
+@18 = ~Hm! It is either feast or famine with you. We are either hurried beyond endurance or bored witless, it seems.~ [YYOSHI09] 
+@19 = ~Pay attention... you will get no second chance!~ [YYOSHI10]
+@20 = ~Fear is for those of no confidence!~ [YYOSHI11]
+@21 = ~KAI!~ [YYOSHI12]
+@22 = ~~ [YYOSHI13]
+@23 = ~~ [YYOSHI14]
+@24 = ~Augh! A little help here...~ [YYOSHI15]
+@25 = ~My thieving skills will be of little use here. What wealth does a bear drop in the woods?~ [YYOSHI16]
+@26 = ~Ah, yes, the city. With all its people and their accumulated wealth, yes?~ [YYOSHI17]
+@27 = ~Be doubly careful. I'm sure all manner of stupid mousetraps await our toes in the dark.~ [YYOSHI18]
+@28 = ~What do they say... about daylight and thieves? Oil and water?~ [YYOSHI19]
+@29 = ~Ahhh. My skills are at their best while under this blanket of darkness, my friend.~ [YYOSHI20]
+@30 = ~I am ready, I think.~ [YYOSHI21]
+@31 = ~What do you need? I am skilled in avoidance.~ [YYOSHI22]
+@32 = ~You require my counsel, yes?~ [YYOSHI23]
+@33 = ~Where shall I display my skill and expertise?~ [YYOSHI24]
+@34 = ~If memory serves...~ [YYOSHI25]
+@35 = ~Sou desu ne?~ [YYOSHI26]
+@36 = ~I can dance on the head of a pin as well.~ [YYOSHI27]
+@37 = ~Fleet of foot and all that.~ [YYOSHI28] 
+@38 = ~Yoshimo is willing.~ [YYOSHI29]
+@39 = ~You're right behind me, right?~ [YYOSHI30]
+@40 = ~Very well. Hai-ya.~ [YYOSHI31]
+@41 = ~Yokatta.~ [YYOSHI32]
+@42 = ~Nothing dangerous, I would hope.~ [YYOSHI33]
+@43 = ~Whatever you need, I do it well.~ [YYOSHI34]
+@44 = ~Haiii-ya! Heh, the tourists love that stuff.~ [YYOSHI35]
+@45 = ~Kaiii! ...Yeah!~ [YYOSHI36]
+@46 = ~Embarrassing!~ [YYOSHI37]
+@47 = ~I hit... to no effect?~ [YYOSHI38]
+@48 = ~I must apologize, but I can carry no more. I have set your item upon the ground.~ [YYOSHI39]
+@49 = ~I have made something mine, and none are the wiser.~ [YYOSHI40]
+@50 = ~All the world is blind to my passing.~ [YYOSHI41]
+@51 = ~My magic is lost!~ [YYOSHI42]
+@52 = ~A trap most devious for the careless of foot.~ [YYOSHI43]
+@53 = ~Katana: "Yoshimo's Doubt"~
+@54 = ~This magic katana is Yoshimo's personal item. It seems to be an astral copy of the sword Yoshimo used in most battles. Even though it doesn't seem as any usual metal sword, it is mostly effective. It seems to be covered with some white radiance.
+
+STATISTICS:
+
+Combat abilities:
+- 10% chance that user, on a succesful hit, will be granted +1 strength bonus for 30 seconds
+
+THAC0: +5 bonus, strikes as a +5 weapon
+Damage:  1D10 + 3
+Damage type:  slashing
+Weight:  5
+Speed Factor: 3
+Proficiency Type: Katana
+Type:  1-handed
+Usable by:
+Yoshimo~
+@55 = ~Ghostly Cloak~
+@56 = ~This ghostly cloak seems to be made of some material you are unable to touch in any way.
+
+STATISTICS:
+
+Weight: 0~
+@57 = ~This magic katana is Yoshimo's personal item. It seems to be an astral copy of the sword Yoshimo used in most battles. Even though it doesn't seem as any usual metal sword, it is mostly effective. It seems to be covered with some white radiance.
+
+STATISTICS:
+
+Combat abilities:
+- 10% chance that user, on a succesful hit, will be granted +1 strength bonus for 30 seconds
+
+THAC0: +5 bonus, strikes as a +5 weapon
+Damage:  1D10 + 3
+Damage type:  slashing
+Weight:  5
+Speed Factor: 3
+Proficiency Type: Katana
+Type:  1-handed~
+@58 = ~This component requires Yoshimo's Remorse to be installed~
+@59 = ~Bounty Hunter 10 / Fighter~
+@60 = ~Bounty Hunter 13 / Fighter~
+@61 = ~Yoshimo's Remorse: Fighter/Thief Dual-Class (Only if Yoshimo was never recruited before)~
