@@ -40,7 +40,7 @@
 @40 = ~Well, maybe I have made some wrong calculations and have done other doubtful things, but at least I wasn't repelling enough to be left without another chance.~
 @41 = ~I would rather rot in the Nine Hells rather than beg for both mercy and pity. Now, waste no more of my precious time, moaning ghost!~
 @42 = ~...and, Edwin, I must admit while you may think of me and my blade as quite effective, we have our role here that is not limited to being your personal escort, my friend.~
-@43 = ~Bah, I should have know that you would know very little about this group's dynamics!~
+@43 = ~Bah, I should have suspected that you would know very little about this group's dynamics!~
 @44 = ~Keep ME alive and perhaps our leader will reach <PRO_HISHER> goals sooner than next year. (Bah, without me there is a chance the group will simply fail in less than a month!)~
 @45 = ~I must agree with Edwin - we need someone to keep an eye on him, Yoshimo. Loosing him may weaken this group.~
 @46 = ~Yoshimo is right, Edwin. He's not your bodyguard. You must learn to take care of yourself.~
@@ -48,7 +48,7 @@
 @48 = ~Bah! You baboons know nothing about tactics. Get out of my way!~
 @49 = ~...perhaps you're right, Haer'Dalis, my fiendish friend. Maybe my story would make a scenario for a fine play, but I am not sure why I would ever like that idea.~
 @50 = ~Believe me or not, Yoshimo, but many would gladly hear about despair and loss. Such stories can do miracles. Reveal our dark thoughts.~
-@51 = ~Perhaps you're right. Don't we all have some wicked desires that echo inside us? But even though, and do not take me personally, I would rather keep Yoshimo's story out of your and other Doomguard's plays and sonnets.~
+@51 = ~Perhaps you're right. Don't we all have some wicked desires that echo inside us? But even though, and do not take it personally, I would rather keep Yoshimo's story out of your and other Doomguard's plays and sonnets.~
 @52 = ~Hah, I can speak for myself, Yoshimo, but I have no control over the other Doomguards or play-writes of the realms.~
 @53 = ~If anyone will ever use your story for their art, know, my friend, that it happened because that specific man or woman found it inspiring.~
 @54 = ~I've been thinking about what you told me. Do you think telling my story, my intriguing friend, may cause any good? Or would it only be for the pleasure of others?~
@@ -74,7 +74,7 @@
 @74 = ~Intriguing, Jaheira. Are you speaking of some specific mistake?~
 @75 = ~Not seeing it coming. Perhaps we could make it end in a better way, Yoshimo.~ 
 @76 = ~Jaheira, let me add some details to the last talk we had. If you don't mind that is.~
-@77 = ~I do not. What is that you need to add, Yoshimo.~
+@77 = ~I do not. What is that you need to add, Yoshimo?~
 @78 = ~I believe that there is some thought still echoing in your head, Jaheira. About predicting what I have done.~
 @79 = ~You shouldn't still think about it. Irenicus knew more about all of you. I was just one of the pawns and tricks. If it wasn't me, he would play another card from his well-prepared deck.~
 @80 = ~It was never about predicting, I'm afraid, but about number of options he had.~
@@ -89,7 +89,7 @@
 @89 = ~Ilmater, why...~
 @90 = ~Yoshimo! Yoshimo! Hey!~
 @91 = ~Ah... Jan. If you want to gather more data for this Dolores you mentioned before, let me say that I can provide you no more information. Even if I wanted. It's just... ehm... too exhausting.~
-@92 = ~Ah, it's something much different! Our last talk made me thing - 'Jan, maybe you should work on some ghost-related scientific research yourself!' So, I thought that maybe I should consult with you. I was thinking about researching if there is any correlation between ghost density and thermal gases! Don't you think there may be something between those two things?~
+@92 = ~Ah, it's something much different! Our last talk made me think - 'Jan, maybe you should work on some ghost-related scientific research yourself!' So, I thought that maybe I should consult with you. I was thinking about researching if there is any correlation between ghost density and thermal gases! Don't you think there may be something between those two things?~
 @93 = ~Ah, and I suddenly prefer you asking me about more data for Dolores...~
 @94 = ~Keldorn, do you think your Order doesn't mind their paragon shining so far away in distant lands?~
 @95 = ~Light should shine upon distant lands, Yoshimo, if we want to keep darkness away from our home. I believe most of them understand my role here.~
@@ -113,10 +113,10 @@
 @113 = ~I do speak often about my current set of cards. Wouldn't it be impolite to only speak of that one thing?~
 @114 = ~I wouldn't blame you for speaking of something as important as that. You lost much, Yoshimo. Many would probably surrender themselves to grief.~
 @115 = ~That would mean, Mazzy, that I would've lost but another battle.~
-@116 = ~I must admit, my brave friend, that little do I know of Avoreen, the god you trust yourself in battle.~
+@116 = ~I must admit, my brave friend, that little do I know of Arvoreen, the god you trust yourself in battle.~
 @117 = ~Arvoreen is also referred to The Wary Sword. Many halfling warriors praise him. Is there a reason why do you ask, Yoshimo?~
 @118 = ~You know what they say, Mazzy - tell me who you praise and the better I can understand where you stand.~
-@119 = ~Let me ask you somthing, Minsc, our berserking strong-man!~
+@119 = ~Let me ask you something, Minsc, our berserking strong-man!~
 @120 = ~Of course, Yoshimo! How can Minsc help you? Do you need Minsc and Boo to lift something?~
 @121 = ~No, but it's actually something that concerns your furry friend, Minsc. I've been pondering if he's feeling troubled seeing me in that state.~
 @122 = ~Ah... Well... we both feel a bit troubled, Yoshimo! You do deserve to have a fine body! Even if you did some bad things.~
@@ -125,7 +125,7 @@
 @125 = ~You heard, Boo? Yoshimo said that we will be known even in the far-away lands! Haha! Legends of Minsc and Boo will live long!~
 @126 = ~Hai, even the sharpest Kozakuran blades won't be sharp enough to stop those tales from spreading!~
 @127 = ~Perhaps, if I'm mentioned there too, they will become my redemption. And maybe they will be exactly the ones I need.~
-@128 = ~Oh, you are a part of those stories too, Yoshimo! And if there are people who disagree, Minsc and Boo will probe the wrong!~
+@128 = ~Oh, you are a part of those stories too, Yoshimo! And if there are people who disagree, Minsc and Boo will prove them wrong!~
 @129 = ~Nalia, I must admit that I could barely imagine you wearing pleated dresses. These days, adventuring gear seems to suit you better.~
 @130 = ~Maybe. I suppose my family would feel differently seeing me in such a role. But at least I know I make a difference here.~ 
 @131 = ~Just like you, Yoshimo.~

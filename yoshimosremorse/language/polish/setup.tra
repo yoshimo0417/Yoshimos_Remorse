@@ -1,0 +1,106 @@
+@1 = ~Skrucha Yoshimo~
+@2 = ~Ten komponent musi byc zainstalowany do klasycznej wersji BG2, BGT, BG2:EE lub EET.~
+@3 = ~Pliki Wilsona wykryte - przypisz Wilsonowi odrebne pliki banterow (BWILSON & BWILSO25)~
+@4 = ~Po ostatecznej bitwie w Tronie Bhaala, trwoga przepe³ni³a to, co pozosta³o z duszy Yoshimo, kiedy objawi³ siê przed nim Pos³aniec Ilmatera. Gdy go zabierano, ³otrzyk walczy³ i opiera³ siê ka¿d¹ cz¹stk¹ swego jestestwa. Powiadaj¹, ¿e jego mêczeñski krzyk rozlega³ siê przez ca³e Dziewiêæ Piekie³ i s³ychaæ go by³o nawet w œwiecie ¿ywych podczas najczarniejszych i najstraszniejszych nocy. Z opowieœci kr¹¿¹cych o jego karze utrwali³a siê jedna przes³anka - ta o jego walecznym duchu, jego pragnieniu, by prze³amaæ to gorzkie zakoñczenie i siê wyzwoliæ. Koniec koñców uda³o mu siê wymkn¹æ z r¹k Pos³añca, jednak tym, co wydosta³o siê z powrotem na œwiat, nie by³ ju¿ Yoshimo, lecz duch zbyt przepe³niony gorycz¹ i gniewem, by móc nosiæ swe dawne miano. Zjawa przemierza³a Krainy w niekoñcz¹cej siê pogoni za spokojem... Ale jedyne, co uda³o jej siê osi¹gn¹æ, to roznieciæ g³êboki, pal¹cy gniew w swoim wnêtrzu. Duch nigdy nie dosta³ kolejnej szansy, by osi¹gn¹æ spokój, nigdy te¿ nie odnalaz³ drogi do odkupienia.~
+@5 = ~Po ostatecznej bitwie w Tronie Bhaala, poczucie g³êbokiej ulgi niczym fala obmy³o Yoshimo, gdy pojawi³ siê przed nim Pos³aniec Ilmatera. Nie opiera³ siê ju¿, lecz podda³ uczuciom, które k³êbi³y siê w jego wnêtrzu. Jego postaæ sta³a siê w jakiœ sposób... l¿ejsza, a umys³ ukojony. Wtem niegdysiejszego ³owcê nagród uderzy³a nag³a œwiadomoœæ, ¿e sta³o siê coœ, co ba³ siê, ¿e nigdy nie bêdzie mo¿liwe - przebaczy³ sam sobie. Mimo ¿e ³otrzyk marzy³ tylko, by <CHARNAME> wypowiedzia³ s³owa akceptacji oraz by jego rodzina, w tym brat, Kagetaro, zapamiêta³a go jako bohatera - powiadaj¹, ¿e osi¹gn¹³ wiêcej, ni¿ sobie ¿yczy³. Odnalaz³ w koñcu spokój.~~Po ostatecznej bitwie w Tronie Bhaala, poczucie g³êbokiej ulgi niczym fala obmy³o Yoshimo, gdy pojawi³ siê przed nim Pos³aniec Ilmatera. Nie opiera³ siê ju¿, lecz podda³ uczuciom, które k³êbi³y siê w jego wnêtrzu. Jego postaæ sta³a siê w jakiœ sposób... l¿ejsza, a umys³ ukojony. Wtem niegdysiejszego ³owcê nagród uderzy³a nag³a œwiadomoœæ, ¿e sta³o siê coœ, co ba³ siê, ¿e nigdy nie bêdzie mo¿liwe - przebaczy³ sam sobie. Mimo ¿e ³otrzyk marzy³ tylko, by <CHARNAME> wypowiedzia³a s³owa akceptacji oraz by jego rodzina, w tym brat, Kagetaro, zapamiêtali go jako bohatera - powiadaj¹, ¿e osi¹gn¹³ wiêcej, ni¿ sobie ¿yczy³. Odnalaz³ w koñcu spokój.~
+@6 = ~Po ostatecznej bitwie w Tronie Bhaala, nag³a œwiadomoœæ uderzy³a niegdysiejszego ³owcê nagród - musia³ zmierzyæ siê z konsekwencjami swoich czynów. Gdy Pos³aniec Ilmatera przyby³ po niego, ³otrzyk b³aga³ o wiêcej czasu, jednak jego proœby nie zosta³y wys³uchane. Czas nie by³ mu przyjacielem ni wrogiem, ale wraz z jego up³ywem Yoshimo wiedzia³, ¿e ¿adne jego b³agania ani prawdziwe pragnienia nie zostan¹ spe³nione. Jednak¿e ³otrzyk by³ uparty i nie godzi³ siê, by to mia³ byæ koniec. Chcia³, by <CHARNAME> wypowiedzia³ s³owa akceptacji i by jego rodzina, w tym brat, Kagetaro, zapamiêta³a go jako bohatera. Nigdy jednak nie by³o mu dane poznaæ, jak sta³o siê naprawdê.~~Po ostatecznej bitwie w Tronie Bhaala, nag³a œwiadomoœæ uderzy³a niegdysiejszego ³owcê nagród - musia³ zmierzyæ siê z konsekwencjami swoich czynów. Gdy Pos³aniec Ilmatera przyby³ po niego, ³otrzyk b³aga³ o wiêcej czasu, jednak jego proœby nie zosta³y wys³uchane. Czas nie by³ mu przyjacielem ni wrogiem, ale wraz z jego up³ywem Yoshimo wiedzia³, ¿e ¿adne jego b³agania ani prawdziwe pragnienia nie zostan¹ spe³nione. Jednak¿e ³otrzyk by³ uparty i nie godzi³ siê, by to mia³ byæ koniec. Chcia³, by <CHARNAME> wypowiedzia³a s³owa akceptacji i by jego rodzina, w tym brat, Kagetaro, zapamiêta³a go jako bohatera. Nigdy jednak nie by³o mu dane poznaæ, jak sta³o siê naprawdê.~
+@7 = ~Rozpacz i gniew~
+@8 = ~Rozpacz i gniew
+(Przemiany)
+
+Poziom: 1
+Zasiêg: 0
+Czas dzia³ania: 5 rund
+Czas rzucania: 1
+Obszar dzia³ania: specjalny
+Rzut obronny: brak
+
+Ta zdolnoœæ specjalna pozwala Yoshimo skupiæ w sobie kr¹¿¹ce w nim rozpacz i gniew i z furi¹ daæ im upust na zewnêtrzny œwiat. On sam staje siê wtedy szybszy i silniejszy, jednak ka¿de u¿ycie tej zdolnoœci oddala go coraz bardziej od odkupienia i sprawia, ¿e jeszcze trudniej bêdzie mu odnaleŸæ wewnêtrzny spokój.~
+@9 = ~zjawa~
+@10 = ~Zjawa~
+@11 = ~Wydaje mi siê, ¿e czas siê ewakuowaæ!~ [YYOSHI02]
+@12 = ~Dobrze nam idzie, co? Pod¹¿amy niebezpieczn¹ œcie¿k¹, ale dobrze dajemy sobie radê.~ [YYOSHI03]
+@13 = ~Nie martwiê siê. Jestem pewien, ¿e te... problemy s¹ jedynie przejœciowe.~ [YYOSHI04]
+@14 = ~Lepiej zmieñ swoje nastawienie, przyjacielu, albo mo¿esz zapomnieæ o towarzystwie Yoshimo!~ [YYOSHI05] 
+@15 = ~No i dobrze. Jeœli nie s³uchasz g³osu rozs¹dku, to nie mam ¿adnego powodu, by dotrzymywaæ ci towarzystwa.~ [YYOSHI06]
+@16 = ~Dziwaczny to wybór. Czy¿byœ ostatnio upad³ na g³owê? Ja? Z przodu? No, skoro masz tak¹ potrzebê...~ [YYOSHI07]
+@17 = ~Muszê wkrótce odpocz¹æ przyjacielu. Moje umiejêtnoœci wymagaj¹ wielkiego skupienia i nie chcê byæ wtedy zmêczony.~ [YYOSHI08]
+@18 = ~Hmmm. Z tob¹ to raz zabawa, a raz stypa. Albo pêdzimy bez wytchnienia, albo bez sensu tkwimy w miejscu.~ [YYOSHI09] 
+@19 = ~Uwa¿aj... nie bêdziesz mieæ nastêpnej okazji!~ [YYOSHI10]
+@20 = ~Strach jest dla tych, co nie maj¹ wiary w siebie!~ [YYOSHI11]
+@21 = ~KAI!~ [YYOSHI12]
+@22 = ~~ [YYOSHI13]
+@23 = ~~ [YYOSHI14]
+@24 = ~Augh! Pomocy... tutaj...~ [YYOSHI15]
+@25 = ~Moje z³odziejskie umiejêtnoœci niewiele siê tu przydadz¹. Jakie skarby móg³by zgromadziæ niedŸwiedŸ?~ [YYOSHI16]
+@26 = ~Ach, tak, miasto. A w nim pe³no ludzi i ich bogactw, hai?~ [YYOSHI17]
+@27 = ~Zachowaj szczególn¹ ostro¿noœæ. Jestem pewien, ¿e w ciemnoœci czyha mnóstwo g³upich pu³apek.~ [YYOSHI18]
+@28 = ~Co to siê mówi... o z³odziejach za dnia? Oliwa na wodzie?~ [YYOSHI19]
+@29 = ~Aaach. Moje umiejêtnoœci sprawdzaj¹ siê najlepiej pod os³on¹ ciemnoœci, przyjacielu.~ [YYOSHI20]
+@30 = ~Jestem gotów, tak s¹dzê.~ [YYOSHI21]
+@31 = ~Czego potrzebujesz? Jestem bieg³y w sztuce uników.~ [YYOSHI22]
+@32 = ~Potrzebujesz mojej rady, tak?~ [YYOSHI23]
+@33 = ~Gdzie mam zademonstrowaæ m¹ wiedzê i umiejêtnoœci?~ [YYOSHI24]
+@34 = ~Jeœli pamiêæ pozwoli...~ [YYOSHI25]
+@35 = ~Sou desu ne?~ [YYOSHI26]
+@36 = ~Potrafiê te¿ zatañczyæ na ostrzu no¿a.~ [YYOSHI27]
+@37 = ~Jestem szybki jak b³yskawica.~ [YYOSHI28] 
+@38 = ~Yoshimo siê zgadza.~ [YYOSHI29]
+@39 = ~Bêdziesz tu¿ za mn¹, prawda?~ [YYOSHI30]
+@40 = ~Doskonale. Hai-ya.~ [YYOSHI31]
+@41 = ~Yokatta.~ [YYOSHI32]
+@42 = ~To nic groŸnego, mam nadziejê.~ [YYOSHI33]
+@43 = ~Zrobiê, co zechcesz, i to jak najlepiej.~ [YYOSHI34]
+@44 = ~Haiii-ya! Heh, turyœci to uwielbiaj¹.~ [YYOSHI35]
+@45 = ~Kaiii! ...Tak!~ [YYOSHI36]
+@46 = ~Ach, wstyd!~ [YYOSHI37]
+@47 = ~Uderzam... i nic?~ [YYOSHI38]
+@48 = ~Proszê o wybaczenie, ale nie mogê nieœæ nic wiêcej. Zostawi³em twoj¹ rzecz na ziemi.~ [YYOSHI39]
+@49 = ~Coœ mi wpad³o do kieszeni i nikt nic nie zauwa¿y³.~ [YYOSHI40]
+@50 = ~Ca³y œwiat jest œlepy, gdy przechodzê obok.~ [YYOSHI41]
+@51 = ~Utraci³em sw¹ magiê!~ [YYOSHI42]
+@52 = ~Oto przebieg³a pu³apka na nieostro¿ne stopy.~ [YYOSHI43]
+@53 = ~Katana: "Rozterka Yoshimo"~
+@54 = ~Ta magiczna katana jest osobistym przedmiotem Yoshimo. Wygl¹da jak widmowa kopia broni, której Yoshimo u¿ywa³ niegdyœ w wiêkszoœci bitew. Od katany bije bia³a poœwiata i mimo ¿e nie przypomina ona ¿adnego zwyk³ego metalowego miecza, jest skuteczna w walce.
+
+PARAMETRY:
+
+Obra¿enia: 1k10 + 3
+TraK0: +5
+Typ obra¿eñ: sieczne
+Cechy specjalne:
+10% szans, ¿e u¿ytkownik otrzyma premiê +1 do Si³y przez trzydzieœci sekund, po trafieniu
+Uderza jak broñ +5
+Waga: 5
+OpóŸnienie: 3
+Rodzaj bieg³oœci: katana
+Typ broni: 1-rêczna
+Mo¿e u¿ywaæ:
+Yoshimo~
+@55 = ~Widmowy p³aszcz~
+@56 = ~Ten widmowy p³aszcz wydaje siê uszyty z dziwnego materia³u, którego nie jesteœ w stanie w ¿aden sposób dotkn¹æ.
+
+PARAMETRY:
+
+Waga: 0~
+@57 = ~Ta magiczna katana jest osobistym przedmiotem Yoshimo. Wygl¹da jak widmowa kopia broni, której Yoshimo u¿ywa³ niegdyœ w wiêkszoœci bitew. Od katany bije bia³a poœwiata i mimo ¿e nie przypomina ona ¿adnego zwyk³ego metalowego miecza, jest skuteczna w walce. 
+
+PARAMETRY:
+
+Specjalne:
+- 10% szans, ¿e u¿ytkownik otrzyma premiê +1 do Si³y przez trzydzieœci sekund, po trafieniu
+- Uderza jak broñ +5
+
+Obra¿enia: 1k10 +3
+TraK0: +5
+Typ obra¿eñ: sieczne
+OpóŸnienie: 3
+Rodzaj bieg³oœci: katana
+Typ broni: 1-rêczna~
+@58 = ~Ten komponent wymaga instalacji Skruchy Yoshimo~
+@59 = ~Lowca nagrod 10 / Wojownik~
+@60 = ~Lowca nagrod 13 / Wojownik~
+@61 = ~Skrucha Yoshimo: dwuklasowanie na Wojownika/Zlodzieja (tylko jesli Yoshimo nie zostal wczesniej dolaczony do druzyny)~
+@62 = ~Pos³aniec~
+@63 = ~Kagetaro~
+@64 = ~Yoshimo~

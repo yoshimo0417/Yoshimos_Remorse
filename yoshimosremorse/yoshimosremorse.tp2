@@ -45,7 +45,8 @@ END
 
 AUTO_TRA ~YoshimosRemorse\Language\%s~
 LANGUAGE ~English~ ~English~ ~YoshimosRemorse/Language/English/setup.tra~
-LANGUAGE ~Russian~ ~Russian~ ~YoshimosRemorse/Language/Russian/setup.tra~
+LANGUAGE ~Russian by Arkie~ ~Russian~ ~YoshimosRemorse/Language/Russian/setup.tra~
+LANGUAGE ~Polish by GoForTheEyes~ ~Polish~ ~YoshimosRemorse/Language/Polish/setup.tra~
 
 BEGIN @1
   REQUIRE_PREDICATE (GAME_IS ~tob BGT bg2ee eet~) @2
@@ -67,6 +68,23 @@ ACTION_IF FILE_EXISTS_IN_GAME ~wilson.dlg~ THEN BEGIN
   END
 END
 
+/////////SOA YOSHIMO TWEAK
+
+COPY_EXISTING ~YOSHI7.cre~ ~override~
+ LPF ADD_CRE_EFFECT INT_VAR opcode = 295 target = 1 timing = 9 parameter2 = 1 END
+ 
+COPY_EXISTING ~YOSHI8.cre~ ~override~
+ LPF ADD_CRE_EFFECT INT_VAR opcode = 295 target = 1 timing = 9 parameter2 = 1 END
+ 
+COPY_EXISTING ~YOSHI10.cre~ ~override~
+ LPF ADD_CRE_EFFECT INT_VAR opcode = 295 target = 1 timing = 9 parameter2 = 1 END
+
+COPY_EXISTING ~YOSHI11.cre~ ~override~
+ LPF ADD_CRE_EFFECT INT_VAR opcode = 295 target = 1 timing = 9 parameter2 = 1 END
+ 
+COPY_EXISTING ~YOSHI12.cre~ ~override~
+ LPF ADD_CRE_EFFECT INT_VAR opcode = 295 target = 1 timing = 9 parameter2 = 1 END
+
 
 /////////PORTRAITS
 
@@ -82,7 +100,17 @@ COPY ~YoshimosRemorse/AREAS~ ~Override~
 
 //AUDIO
 
-COPY ~YoshimosRemorse/AUDIO~ ~Override~
+ACTION_IF ("%LANGUAGE%" STR_EQ "Polish") THEN BEGIN
+  COPY ~YoshimosRemorse/audio-pl~ ~YoshimosRemorse/audio~
+END
+
+ACTION_IF ("%LANGUAGE%" STR_EQ "Russian") THEN BEGIN
+  COPY ~YoshimosRemorse/audio-en~ ~YoshimosRemorse/audio~
+END
+
+ACTION_IF ("%LANGUAGE%" STR_EQ "English") THEN BEGIN
+  COPY ~YoshimosRemorse/audio-en~ ~YoshimosRemorse/audio~
+END
 
 LAF HANDLE_AUDIO END
 

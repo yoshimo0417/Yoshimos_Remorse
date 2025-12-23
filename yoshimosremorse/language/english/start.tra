@@ -6,7 +6,7 @@
 @6 = ~Oh, splendid! And who's going to come next? Should I expect my "dad" to pay me a visit?~
 @7 = ~Refrain your temper tantrum, god-child.~
 @8 = ~I am here because of the betrayal that took place days ago; because of one particular man whom you have met and both bound and rescued.~
-@9 = ~Bound and rescued? Do you know of whom he speaks of?~
+@9 = ~Bound and rescued? Do you know of whom he speaks?~
 @10 = ~We--we should be careful, <CHARNAME>.~
 @11 = ~You must have doomed and bound many men, my <PRO_BROTHERSISTER>, not just me. Surprising, as many consider you a hero. It seems there are no true heroes in golden plates.~
 @12 = ~What are you talking about, Messenger? Explain yourself!~
@@ -56,7 +56,7 @@
 @56 = ~To me?~
 @57 = ~Just don't tell me you brought him here to make him apologize.~
 @58 = ~Yes. He was to help you when you were in need of trusted companions, but instead he brought you to Irenicus.~
-@59 = ~No. It's about more than words.~ 
+@59 = ~It's about more than words.~ 
 @60 = ~Crimes as those Yoshimo committed cannot be forgotten, yet they may be forgiven. He made his decisions; he was afraid of his own life and decided to betray you. He believed you didn't deserve that, even though he didn't want to pay for working for the demon in an elven skin.~
 @61 = ~That's enough, Messenger. There are tales that don't need to be retold. I believe we all heard that story and remember it quite well.~
 @62 = ~How should he pay for his crimes?~
@@ -79,7 +79,7 @@
 @79 = ~I will never forgive this man, Messenger. Take him. There are no second chances, Yoshimo. These are your words.~
 @80 = ~Can he stay here, so I can think about it? I'm afraid I may need a moment to make my decision.~
 @81 = ~I--I...~
-@82 = ~Thank you, leader. Very little men can surprise Yoshimo, but you have succeeded.~
+@82 = ~Thank you, leader. Very few people can surprise Yoshimo, but you have succeeded.~
 @83 = ~You have just made a mistake, <CHARNAME>. I'm afraid we will all pay for it.~
 @84 = ~I hope you know what you're doing, <CHARNAME>.~
 @85 = ~I think I want to trust him, <CHARNAME>. Thanks for giving him a chance.~
@@ -107,7 +107,7 @@
 @107 = ~I hope to avoid some of the fuss and suicidal missions. I would be glad if you could keep that in mind.~
 @108 = ~Before you come with me, you need to wait for a while, though.~
 @109 = ~Hehe, otherwise, we would meet in a less peculiar place than Hell, no?~
-@110 = ~I will, leader, but somehow I feel you will somehow lure these in our direction, and make us fight for our lives in the most dangerous of battles.~
+@110 = ~I will, leader, but I have a feeling you will somehow lure these in our direction, and make us fight for our lives in the most dangerous of battles.~
 @111 = ~Heh, I expect no less than that.~
 @112 = ~But now, our brave leader, do not let me ponder more about the circumstances and possible traps, let us move on. Unless you have some questions you would like to ask first.~
 @113 = ~I do, to be honest. Will you stay in that... form till the end? Or will you return to flesh and bones?~
@@ -125,7 +125,7 @@
 @125 = ~Can I really trust you after all of this?~
 @126 = ~You should make an oath. I was told that an oath made here would be more than just some words - it is binding.~ 
 @127 = ~No. Everything's fine. Let's move on, Yoshimo.~
-@128 = ~Ah, it seems my trusted leader learned something from the daemon <PRO_HESHE> fought. Fine, but I expected more from you than putting chains on my wrists.~
+@128 = ~Ah, it seems my trusted leader learned something from the demon <PRO_HESHE> fought. Fine, but I expected more from you than putting chains on my wrists.~
 @129 = ~I swear to support you, <CHARNAME>, and I promise I will never attack you again. Ilmater, mark my words.~
 @130 = ~Ah, then just tell me, what should we do, leader?~
 @131 = ~Wait? How cruel is that - to condemn me to wait here even longer! Fine, but come back once you need a skilled rogue.~

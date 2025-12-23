@@ -1,5 +1,5 @@
 @1 = ~Tell me, <CHARNAME>, what happened to Bodhi? We all know where Irenicus ended up, but what about his sister-in-crime?~
-@2 = ~I got her. After you died, Irenicus tried to hide in the Underdark. When we left, we had to find the Rhynn Lanthron she kept in her tombs.~
+@2 = ~I got her. After you died, Irenicus tried to hide in the Underdark. When we left, we had to find the Rhynn Lanthorn she kept in her tombs.~
 @3 = ~What do you think happened to her? I killed her in her silent tombs. She thought she was safe; that nothing could stop her and her brother, but she was wrong.~
 @4 = ~It's not something I would like to talk about, Yoshimo. It's a past I would rather forget about.~
 @5 = ~Ha! I wish I could see her face when you found her! She must have been truly surprised, perhaps even frightened. But I know her, she would pretend that she's on the winning side. They were very much alike.~
@@ -26,7 +26,7 @@
 @26 = ~You need to control your hatred, Yoshimo, if you ever want to succeed in the task Ilmater gave you.~
 @27 = ~Heh, never underestimate the Godchild. So sayeth the wise Alaundo, heh?~
 @28 = ~Ha! For a moment I was afraid you would say something about honor or other "virtues", while more often times than not, anger can serve the purpose.~
-@29 = ~You almost seem to have enjoy this... nightmare that has happened. But I hope that I just misunderstood you, <CHARNAME>.~
+@29 = ~You almost seem to have enjoyed this... nightmare that has happened. But I hope that I just misunderstood you, <CHARNAME>.~
 @30 = ~Ah, if only answers to that manner of questions could come as easily as doubts, wise leader. I assure you, they don't.~
 @31 = ~It's a matter of will, Yoshimo. If you don't try, you may not reach your redemption. Keep that in mind.~
 @32 = ~Hmph! Weak as always.~
@@ -82,9 +82,9 @@
 @82 = ~We don't have time for this.  Now, let us move on.~
 @83 = ~Heh, so there is still some curiosity in these ears of yours, yes? That's good, as I thought you lost most of it on your way to your Pocket Plane, my leader!~
 @84 = ~Yoshimo, wait! I hope you don't mind if I listen to this as well, do you?  It's been a while since I heard any good story, as everything seems more boring after I joined this group! And if any of you would feel like having a snack while our friend tells the story, just let me know! I should have some dried turnip and beetroots somewhere here.  They're not just tasty, but healthy, as well!~
-@85 = ~Well, listen if you feel like doing so, our little friend, but now let me speak, as I'm afraid we don't have much time before our time to take a breath is over!~
+@85 = ~Well, listen if you feel like doing so, our little friend, but now let me speak, as I'm afraid we don't have much time before our moment to take a breath is over!~
 @86 = ~So, while it's not something I saw with my own eyes, but when we were at the Copper Coronet I heard about a man as unlucky as a fire salamander on a sinking island. A man most called Ill-fated Kid.~
-@87 = ~He was a man who had but one poison - this feeling you get when you put all your eggs in one basket. He loved the thrill. It was his kind of adventure and while he knew it was nothing else but balancing on the very edge of fortune! But on one night something happened.~
+@87 = ~He was a man who had but one poison - this feeling you get when you put all your eggs in one basket. He loved the thrill. It was his kind of adventure and even though he knew it was nothing else but balancing on the very edge of fortune! But one night something happened.~
 @88 = ~Ill-fated Kid lost almost everything in just one hour. All his gold. His lucky talisman. But he wanted more, my friend! He wanted to test the very core of his fortune. He was to bid his very last belonging - his dignity, along with his family dagger. The dice was thrown and...~
 @89 = ~...Tymora must have a soft spot for reckless men, because he won. He got it all back.~
 @90 = ~He won everything back? Why would people call him Ill-fated Kid then?~ 
@@ -134,7 +134,7 @@
 @134 = ~What? I'm not going to answer such a question, Yoshimo!~
 @135 = ~Ugh, just give me a break, will you?~ 
 @136 = ~It's... unusual. Perhaps I'm in a greater debt than I thought.~
-@137 = ~You do not have to explain yourself, <CHARNAME>. It's not just you who does not step twice into the same river.~
+@137 = ~You do not have to explain yourself, <CHARNAME>. You cannot step into the same river twice.~
 @138 = ~I... I didn't know that. The bruise I have left may have been more serious than I thought. I... I am sorry, <CHARNAME>.~
 @139 = ~I see. Perhaps that was wise of you, <CHARNAME>.~
 @140 = ~I see. I suppose I was the right man in the right place. Just as Irenicus wanted it.~
@@ -149,7 +149,7 @@
 @149 = ~Now, there is some work to do, right? Perhaps we'll discuss something again in a while, no?~
 @150 = ~I guess you're right. Ah, the Great Yoshimo is lucky to have an experienced leader.~
 @151 = ~But there is some work to do, right? Perhaps we'll discuss something again in a while, no?~
-@152 = ~Ah, I suppose you'd rather move on, yes?~
+@152 = ~Ah… I presume that is an order to resume our march, yes...? Come then.~
 @153 = ~It's more than understandable, <CHARNAME>.~
 @154 = ~Tell me something, <CHARNAME>. Would you pass your heritage to someone else if you could?~
 @155 = ~No. I wouldn't do such a thing to anyone. The burden that comes with it is way too heavy.~
@@ -180,8 +180,8 @@
 @180 = ~I don't really care, Yoshimo. Really. Neither should you. Come, let's keep going.~
 @181 = ~Hah, I suppose you're right.~
 @182 = ~People change stories. Small blades become celestial swords. Thugs become heroes...~
-@183 = ~Hah, it's always so clear in all the tales? If only our path was as clear as it is described.~
-@184 = ~You think so? If that's true, my leader, then I wonder how how many lips will tell your story when we're done with our current mission.~
+@183 = ~Hah, it's always so clear in all the tales. If only our path was as clear as it is described.~
+@184 = ~You think so? If that's true, my leader, then I wonder how many lips will tell your story when we're done with our current mission.~
 @185 = ~Perhaps your story will reach Candlekeep, Baldur's Gate, and all the taverns that could welcome you and your group.~
 @186 = ~Surely people from your past deserve to know what you've gone through.~
 @187 = ~You truly used many dark colors to paint that picture, my leader.~
@@ -201,7 +201,7 @@
 @201 = ~I understand it more than well. But... thank you for giving me a chance, <CHARNAME>... friend.~
 @202 = ~It truly amazes me that you are able to forgive me. You are an unique <PRO_MANWOMAN>, capable of things many can only dream of.~
 @203 = ~Ah, knowing all you have just said can make a road quite ligher and easier to walk. Come now, friend, before Yoshimo will get even more sentimental!~
-@204 = ~Even the idea that you try to be fine with this makes my hopes grow, <CHARNAME>, even if I can never be called your friend, my leader.~
+@204 = ~The very idea that you try to be fine with this makes my hopes grow, <CHARNAME>, even if I can never be called your friend, my leader.~
 @205 = ~Lots of blood was spilt, no wonder it's hard to stand still on the grounds and with full confidence.~
 @206 = ~But I suppose you'd like to be moving now, no? Come then.~
 @207 = ~These are razor-sharp words, <CHARNAME>, and believe me or not - they can cut deep even to a ghost like myself.~
@@ -241,8 +241,8 @@
 @241 = ~I see. If that's what you wish.~
 @242 =~ So, my friend... would you mind if this bounty hunter asked yet another question? All to make the curiosity easier to deal with.~
 @243 = ~Go on, Yoshimo.~
-@244 = ~Yes. You don't have to ask me that each time you want to know something personal. Really.~
-@245 = ~No. Please, just... leave me be. I have enough on my plate and I'd rather focus on more serious things than sate your "curiosity".~
+@244 = ~I don't mind. You don't have to ask me that each time you want to know something personal. Really.~
+@245 = ~No. Please, just... leave me be. I have enough on my plate and I'd rather focus on more serious things than sating your "curiosity".~
 @246 = ~I suppose I gathered enough courage to ask you, my friend - does the Great Yoshimo still catch your eye? Or is what you spoke of last time entirely a matter of the past?~
 @247 = ~I don't know... maybe. It's a--hard question. Maybe if you were flesh and bones it would be easier, Yoshimo. No matter what I feel, I'm afraid there may be no future for us now.~ 
 @248 = ~Yes. Even now, after everything that happened I simply can't change the fact that I like you. It's quite clear and that's why I let you join again - because I still believe in you.~
@@ -262,7 +262,7 @@
 @262 = ~Well, it could have been different. I am sorry for not letting things happen. I believe you are an interesting <PRO_MANWOMAN>, <CHARNAME>, but I'm saying it too late.~
 @263 = ~That's true... it's too late.~
 @264 = ~At least now I know, Yoshimo. It's better than letting those words and thoughts rot in silence.~
-@265 = ~On a second thought, you're making me feel really uncomfortable. I think... we should simply move on.~
+@265 = ~On second thought, you're making me feel really uncomfortable. I think... we should simply move on.~
 @266 = ~Heh, maybe, but even though it feels better to let those words out of my throat.~
 @267 = ~True, my friend. It feels... better.~
 @268 = ~Ah, but we stood in one place for a while already. I believe we should move on... and perhaps speak again in a while? In case I had some more thoughts on that topic?~
@@ -306,12 +306,12 @@
 @306 = ~I... suppose I may need to take a big breath. Funny thing - my lungs need not any air, but a breath can still help to find some serenity.~
 @307 = ~Come... let's just move on, my leader.~
 @308 = ~Fine. As you wish, <CHARNAME>, our leader.~
-@309 = ~They surely have less trinkets and goods to hide than most Athkatlan families...~
+@309 = ~They surely have fewer trinkets and goods to hide than most Athkatlan families...~
 @310 = ~I wish it was all different, but... that's how it is, I'm afraid.~
 @311 = ~I'm not sure you remember all those people we met in the Slums, Yoshimo.~
 @312 = ~That's how life is like, Yoshimo. The sooner you accept that it's not always fair, the better it is for you.~  
 @313 = ~We do not have time for talks about poverty and misfortune. Waste no more of our time and let us move on.~
-@314 = ~The more we talk, the more I believe there are many things we'd like to change, but very little we actually can.~
+@314 = ~The more we talk, the more I believe there are many things we'd like to change, but very few we actually can.~
 @315 = ~Quite a bitter thought. But true.~  
 @316 = ~Look, I don't want to talk about this. Can't we just move on?~
 @317 = ~I remember them, my leader, but somehow I feel these people have even less. But I may be wrong. Perhaps I shouldn't even try to decide whose situation is worse.~
@@ -343,7 +343,7 @@
 @343 = ~We don't have time right now, Yoshimo.~
 @344 = ~A new beginning for you maybe, but not for this warrior.~
 @345 = ~But before new beginnings and final chapters close, I would like to speak to you.~
-@346 = ~But there's no need to wonder such things.~ 
+@346 = ~Do not trouble yourself with these things. I... don't think it's necessary.~ 
 @347 = ~Heh, a possible beginning to many things, eh?~
 @348 = ~Heh, can't wait to be rid of this ghostly form of a man, eh?~
 @349 = ~But before I dissipate into thin air, I would like to speak to you.~
@@ -364,13 +364,13 @@
 @364 = ~That was... unexpected, to say the least. The storm clouds inside of my heart have begun to clear but I am unsure of this.~ 
 @365 = ~Perhaps time will tell?~
 @366 = ~But we have spoken enough, let us face the end.~
-@367 = ~That is... sad to hear, but I cannot blame your decisions.~
+@367 = ~That is... sad to hear, but I cannot blame you for your decisions.~
 @368 = ~But we have spoken enough. Come, let us face the end.~ 
 @369 = ~You... you are a cruel <PRO_MANWOMAN>. I should have expected the shackles from your father would continue to hold you. The apple does not fall far from its tree.~
 @370 = ~At least Irenicus granted me death. My spirit may not have been in the eye of the storm but some amount of my honor would have been preserved.~
-@371 = ~I will face my torment as a bull charging at full force straight ahead, even you, cannot take away my pride.~ 
-@372 = ~Ah, my friend. It seems that we are near journey's end. Yet, I cannot help but wonder how your tale will end.~
-@373 = ~I believe there is. There were signs the storm would come, yet you somehow scared the clouds away.~
+@371 = ~I will face my torment as a bull charging at full force straight ahead and even you cannot take away my pride.~ 
+@372 = ~Ah, my friend. It seems that we are at our journey's end. Yet, I cannot help but wonder how your tale will end.~
+@373 = ~I believe it is. There were signs the storm would come, yet you somehow scared the clouds away.~
 @374 = ~But certainly you must be tired of hearing me speak in riddles, eh? So, my friend, allow me to be frank.~ 
 @375 = ~I really don't know, Yoshimo, but I am glad I am surrounded by friends.~
 @376 = ~The sooner we get this over with, the sooner I can start the rest of my life.~
@@ -384,7 +384,7 @@
 @384 = ~But before the battle descends upon us, I would like to express my gratitude to you.~
 @385 = ~It is hard to imagine our leader leading a normal life, no?~
 @386 = ~But before the normalities of life descend upon you, I would like to express my gratitude to you.~
-@387 = ~When you first accepted me in my... current condition, I did not expect your forgiving nature. In truth, you have shown me the complete opposite.~
+@387 = ~When you first accepted me in my... current condition, I did not expect your forgiving nature. But then, you have shown me how… inaccurate my fears and expectations were. And to making such mistake I, Yoshimo, must now admit...~
 @388 = ~What is left of this sad warrior's heart and mind is at peace - thanks to you.~
 @389 = ~I truly wished things turned out differently for us, but I am glad I was able to fight alongside you one last time.~
 @390 = ~Even the gods make mistakes, Yoshimo.~
@@ -403,7 +403,7 @@
 @403 = ~Never have I felt so refreshed in all these years - it is as if my thirst for water has finally be quenched!~
 @404 = ~Thank you, <CHARNAME>. Truly.~
 @405 = ~Now, before another storm comes upon my face, let us face the final, glorious battle. Let us end this once and for all.~
-@406 = ~It seems the storm has come sooner than expected... I did not expect this.~
+@406 = ~It seems the storm has come sooner than I thought... I did not expect this.~
 @407 = ~Very well. You have made your stance crystal clear, my leader.~
 @408 = ~My leader, I've been pondering the events leading up to this and I cannot help but wonder how your tale will end.~
 @409 = ~Is there something you need to say, Yoshimo?~
@@ -425,7 +425,7 @@
 @425 = ~Let us end this once and for all.~
 @426 = ~Even now, the clock never stops for anyone but you. A shame, but what could I have expected?~
 @427 = ~It seems our fearless leader's kindness knows no bounds. To escape the bargain struck by a lich, despite this man's previous conquest for coin - is this fair?~
-@428 = ~Yes, it was fair. A soul cannot be bargained with.~ 
+@428 = ~Yes, it is fair. A soul cannot be bargained with.~ 
 @429 = ~I don't know, Yoshimo, but the choice had to be made.~
 @430 = ~It wasn't a fair trade on Marlowe's behalf, the man promised his soul without knowing the full extent of the bargain.~
 @431 = ~But, instead of jumping into a cage of lions and facing his fears, our friend has leapt over the lions.~
@@ -443,7 +443,7 @@
 @443 = ~It wasn't fair, but such is life.~
 @444 = ~Ah yes, I suppose a debt must always be paid... despite what was promised beforehand.~ 
 @445 = ~Ah yes, when has life's journey ever been a walk through a meadow?~
-@446 = ~It seems our fearless leader's iron fist knows no bounds. Forgiveness is hard to come by it seems.~
+@446 = ~It seems our fearless leader's iron fist knows no bounds. Forgiveness is surely hard to come by.~
 @447 = ~Tough luck. Marlowe got what was coming to him and now Malla's soul is mine.~
 @448 = ~Forgiveness is hard to come by, you should do well to remember this too.~
 @449 = ~He paid the price. See how his choices led him to this?~
@@ -467,9 +467,9 @@
 @467 = ~Ah, so that would be it with our plan, to be quiet like a snake.~
 @468 = ~Do you have anything about Yoshimo?~ 
 @469 = ~Ah, the infamous bounty hunter that used to work with you? Of course, I have something about him somewhere here...~
-@470 = ~Ah, I suppose most will remember the Great Yoshimo as a betrayer. I suppose I shouldn't expect anything else.~
+@470 = ~Ah, I suppose most will remember the Great Yoshimo as a betrayer. I don't think I should expect anything else.~
 @471 = ~Excuse me, but... is that Yoshimo? You brought him back, <CHARNAME>? That's... mostly unusual. My notes do not include such a progress of events. Perhaps... perhaps we should update them? I would be honored if you could tell me how you feel about that man you brought back, <CHARNAME>.~
-@472 = ~Yoshimo indeed made some mistakes, but he was bound by geas. We should all remember that. I bet that at some point he had some doubts, but there was no way back for him. People should understand that he was a victim too. He's trying to pay for his mistakes now.~ 
+@472 = ~Yoshimo indeed made some mistakes, but he was bound by a geas. We should all remember that. I bet that at some point he had some doubts, but there was no way back for him. People should understand that he was a victim too. He's trying to pay for his mistakes now.~ 
 @473 = ~Yoshimo made some mistakes and we should learn from what happened to him. Nothing can erase the past. I think we should think of him as of a perfect example of taking a wrong path.~ 
 @474 = ~Well, that's surely an interesting way of looking at this situation! Thank you for sharing this story with me, <CHARNAME>.~
 @475 = ~I should thank you too, my leader. It is... indeed an interesting way of speaking about my doings.~
