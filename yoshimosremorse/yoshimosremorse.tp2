@@ -1,7 +1,7 @@
 BACKUP ~YoshimosRemorse\backup~
 AUTHOR ~Lava Del'Vortel and jmaeq~
 README ~YoshimosRemorse/ReadMe-YR.html~
-VERSION ~v2.0~	
+VERSION ~v2.01~	
 	 
 ALWAYS
   INCLUDE ~YoshimosRemorse/lib/eet.tph~
@@ -37,15 +37,15 @@ ALWAYS
     INT_VAR
       infer_charsets = 1
     STR_VAR
-      tra_path = EVAL ~%MOD_FOLDER%/language~
+      tra_path = EVAL ~YoshimosRemorse/language~
       noconvert_array = yremorsenoconvert
       reload_array = yremorsereload
   END
 END
 
 AUTO_TRA ~YoshimosRemorse\Language\%s~
-LANGUAGE ~English~ ~English~ ~%MOD_FOLDER%/Language/English/setup.tra~
-LANGUAGE ~Russian~ ~Russian~ ~%MOD_FOLDER%/Language/Russian/setup.tra~
+LANGUAGE ~English~ ~English~ ~YoshimosRemorse/Language/English/setup.tra~
+LANGUAGE ~Russian~ ~Russian~ ~YoshimosRemorse/Language/Russian/setup.tra~
 
 BEGIN @1
   REQUIRE_PREDICATE (GAME_IS ~tob BGT bg2ee eet~) @2
@@ -60,10 +60,10 @@ ACTION_IF FILE_EXISTS_IN_GAME ~wilson.dlg~ THEN BEGIN
     APPEND ~interdia.2da~ ~WILSON BWILSON BWILSO25~
     UNLESS ~WILSON~
    ACTION_IF NOT (FILE_EXISTS_IN_GAME ~BWILSON.dlg~) THEN BEGIN
-   COMPILE ~%MOD_FOLDER%/dialogues/BWILSONFix.d~
+   COMPILE ~YoshimosRemorse/dialogues/BWILSONFix.d~
   END
    ACTION_IF NOT (FILE_EXISTS_IN_GAME ~BWILSO25.dlg~) THEN BEGIN
-   COMPILE ~%MOD_FOLDER%/dialogues/BWILSO25Fix.d~
+   COMPILE ~YoshimosRemorse/dialogues/BWILSO25Fix.d~
   END
 END
 
