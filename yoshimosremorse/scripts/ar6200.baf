@@ -1,7 +1,7 @@
 //Negative Epilogue
 IF
 Global("StartEndBios","AR6200",1)
-InParty("YYosh25")
+InParty("YOSHIMO")
 GlobalLT("YYInflu","GLOBAL",0)
 Global("YYoshBio","GLOBAL",0)
 THEN
@@ -15,7 +15,7 @@ END
 //Positive Epilogue
 IF
 Global("StartEndBios","AR6200",1)
-InParty("YYosh25")
+InParty("YOSHIMO")
 GlobalGT("YYInflu","GLOBAL",10)
 Global("YYoshBio","GLOBAL",0)
 THEN
@@ -29,7 +29,7 @@ END
 //Neutral Epilogue
 IF
 Global("StartEndBios","AR6200",1)
-InParty("YYosh25")
+InParty("YOSHIMO")
 GlobalLT("YYInflu","GLOBAL",11)
 GlobalGT("YYInflu","GLOBAL",-1)
 Global("YYoshBio","GLOBAL",0)

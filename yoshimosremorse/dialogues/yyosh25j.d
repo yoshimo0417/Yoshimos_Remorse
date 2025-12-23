@@ -1156,68 +1156,68 @@ END
 //Yaga's concubine
 
 INTERJECT_COPY_TRANS YAGCON 0 YYosh25JConc1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~I've seen many shady characters getting involved in quite shady games, <CHARNAME>, but Yaga-Shura seems to have even more questionable taste when it comes to treating his pawns.~
 END
 
 INTERJECT_COPY_TRANS YAGCON 5 YYosh25JConc2 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~Are you sure you want to leave her like that? Perhaps we should think twice before letting her rot here, <CHARNAME>?~
 END
 
 //Amkethran Saemon
 
 INTERJECT_COPY_TRANS AMSAEMON 0 YYosh25JSaemon1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~Well, that should be interesting...~
 END
 
 //General
 
 INTERJECT_COPY_TRANS AMTGEN01 0 YYosh25JGen1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~Ah, <CHARNAME>, you are truly a magnet for all kinds of trouble. I wonder if there'll be yet another army coming after you.~
 END
 
 //Balthazar
 
 INTERJECT_COPY_TRANS BALTH 0 YYosh25JBalth1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~Be careful, <CHARNAME>. This man may look like a fox, but he also has strength of a bear.~
 END
 
 //Saradush Man
 
 INTERJECT_COPY_TRANS BALTH 0 YYosh25JBalth1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~That's quite a straightforward question, isn't it, my leader?~
 END
 
 //Melissan Saradush
 
 INTERJECT_COPY_TRANS SARMEL01 0 YYosh25JSarMel1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~Ah, as always we come in the middle of quite a hassle, my leader.~
 END
 
 //Ardic Saradush
 
 INTERJECT_COPY_TRANS SARSON01 0 YYosh25JArdic1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~Well, gods rarely have anything to do with saving those who need to be saved. That's why adventurers come out of nowhere, young one.~
 END
 
 //Some men Saradush
 
 INTERJECT_COPY_TRANS SARTRO03 0 YYosh25JSM1 
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN
 ~Ah, so that would be it with our plan, to be quiet like a snake.~
 END
 
 //Volo
 
 EXTEND_BOTTOM SARVOLO 9 #4
-+ ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID) Global("YYOneTime","GLOBAL",0)~ + ~Do you have anything about Yoshimo?~ DO ~SetGlobal("YYOneTime","GLOBAL",1)~ + YYBio
++ ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID) Global("YYOneTime","GLOBAL",0)~ + ~Do you have anything about Yoshimo?~ DO ~SetGlobal("YYOneTime","GLOBAL",1)~ + YYBio
 END
 
 CHAIN SARVOLO YYBio
@@ -1242,12 +1242,12 @@ EXTERN SARVOLO 9
 //SOLAR
 
 /*I_C_T FINSOL01 27 YYosh25SolarChoice
-== YYosh25J IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID)~ THEN ~So, this is it. You followed the thread left by your heritage and ended here. I am not going to tell you what you should do, <CHARNAME>. It should be your decision.~
+== YYosh25J IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN ~So, this is it. You followed the thread left by your heritage and ended here. I am not going to tell you what you should do, <CHARNAME>. It should be your decision.~
 == YYosh25J ~No matter what it will be, it should be yours.~
 END */
 
 EXTEND_BOTTOM FINSOL01 27
-IF ~InParty("YYosh25") !StateCheck("YYosh25",CD_STATE_NOTVALID) Global("YYoshimoLastWords","GLOBAL",0)~ DO ~SetGlobal("YYoshimoLastWords","GLOBAL",1)~ EXTERN YYosh25J YYosh25SolarChoice
+IF ~InParty("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID) Global("YYoshimoLastWords","GLOBAL",0)~ DO ~SetGlobal("YYoshimoLastWords","GLOBAL",1)~ EXTERN YYosh25J YYosh25SolarChoice
 END
 
 CHAIN YYosh25J YYosh25SolarChoice

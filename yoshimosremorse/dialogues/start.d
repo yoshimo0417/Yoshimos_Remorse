@@ -28,7 +28,9 @@ IF~~THEN REPLY ~I have met many men, Messenger. You need to be more precise.~ EX
 
 CHAIN YYAva Avatar003
 ~I speak of--~
-DO ~SetGlobal("YYStart","GLOBAL",3) StartCutScene("YYCut2")~ EXIT
+END
+IF ~!Dead("YOSHIMO")~ DO ~SetGlobal("YYStart","GLOBAL",3) StartCutScene("YYCut2")~ EXIT
+IF ~Dead("YOSHIMO")~ DO ~SetGlobal("YYStart","GLOBAL",3) StartCutScene("YYCut2a")~ EXIT
 
 //Yoshimo appears
 
@@ -144,7 +146,7 @@ CHAIN YYosh25 Avatar010
 ~I should have known that this would end like this.~
 ==YYAva ~The decision has been made. It seems some sins cannot be erased, Yoshimo.~
 ==YYAva ~Farewell, god-child.~
-DO ~SetGlobal("YYStart","GLOBAL",50) ActionOverride("YYosh25",DestroySelf()) DestroySelf()~ EXIT
+DO ~SetGlobal("YYStart","GLOBAL",50) ActionOverride("YOSHIMO",DestroySelf()) DestroySelf()~ EXIT
 
 CHAIN YYAva Avatar011
 ~Fine, but know that the longer he stays isolated, the less time he gets to pay for his past.~

@@ -2,9 +2,9 @@ BEGIN YYoshBro
 
 //AMKETHRAN - Yoshimo and His Brother
 
-CHAIN IF ~InParty("YYosh25")
-See("YYosh25")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+CHAIN IF ~InParty("YOSHIMO")
+See("YOSHIMO")
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25BrotherEncounter","GLOBAL",1)~ THEN YYoshBro BROTHER.00 //meeting
 ~Hey, wait! Excuse me! Do you possibly have... shigas. I... I'm not sure how--~

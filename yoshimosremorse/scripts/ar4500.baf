@@ -1,11 +1,22 @@
 IF
-Global("YYStart","GLOBAL",0)
-GlobalGT("BeginChallenge1","GLOBAL",2)
-!Global("YoshimoRomanceActive","GLOBAL",2)
-!Global("YoshimoRomanceActive","GLOBAL",3)
+Global("YoshimoSummoned","GLOBAL",0)
 THEN
 RESPONSE #100
-CreateCreature("YYAva",[1990.1140],0) 
-SetGlobal("YYStart","GLOBAL",1)
+SetGlobal("YoshimoSummoned","GLOBAL",2)
 Continue()
+END
+
+IF 
+Global("YYStart","GLOBAL",0) 
+GlobalGT("BeginChallenge1","GLOBAL",2) 
+!Global("YYYoshimoDoomed","GLOBAL",1) 
+!Global("YoshimoRomanceActive","GLOBAL",2) 
+ OR(2) 
+  GlobalLT("YoshimoRomanceTalk","GLOBAL",18) 
+  Global("YoshimoRomanceTalk","GLOBAL",0) 
+THEN 
+RESPONSE #100 
+CreateCreature("YYAva",[1990.1140],0) 
+SetGlobal("YYStart","GLOBAL",1) 
+Continue() 
 END

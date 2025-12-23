@@ -1,28 +1,35 @@
-
-IF
-InParty(Myself)
-Global("YYoshMakeGlobal","GLOBAL",0)
-THEN
-RESPONSE #100
-MakeGlobal()
-SetGlobal("YYoshMakeGlobal","GLOBAL",1)
-END
-
 IF
 HPLT(Myself,2)
 THEN
 RESPONSE #100
-CreateVisualEffectObject("SPFIRSDI",Myself)
+CreateVisualEffectObject("ICFIRSDI",Myself)
+PlayDeadInterruptible(1)
 DropInventory()
 SetLeavePartyDialogueFile()
 LeaveParty()
 SetGlobal("YYStart","GLOBAL",8)
 ApplySpell(Myself,RESTORE_FULL_HEALTH)
 ChangeAIScript("",DEFAULT)
-MoveGlobal("AR4500","YYosh25",[1600.1100])
+MoveGlobal("AR4500","YOSHIMO",[1600.1100])
 END
 
 //initial meeting
+IF
+Global("Experience","LOCALS",0)
+CheckStatLT(Myself,2500000,XP)
+THEN
+RESPONSE #100
+SetGlobal("Experience","LOCALS",1)
+ChangeStat(Myself,XP,2500000,SET)
+END
+
+IF
+Global("Experience","LOCALS",0)
+!CheckStatLT(Myself,2500000,XP)
+THEN
+RESPONSE #100
+SetGlobal("Experience","LOCALS",1)
+END
 
 IF
 Global("YYVARI","GLOBAL",0)
@@ -60,7 +67,7 @@ IF
 InParty(Myself)
 CombatCounter(0)
 See(Player1)
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("YYoshimoRemorseActive","GLOBAL",1)
 RealGlobalTimerExpired("YYTime","GLOBAL")
@@ -81,7 +88,7 @@ IF
 InParty(Myself)
 CombatCounter(0)
 See(Player1)
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("YYoshimoRemorseActive","GLOBAL",1)
 RealGlobalTimerExpired("YYTime","GLOBAL")
@@ -115,7 +122,7 @@ IF
 InParty(Myself)
 CombatCounter(0)
 See(Player1)
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("YYoshiWasLoved","GLOBAL",1)
 RealGlobalTimerExpired("YYTime","GLOBAL")
@@ -132,7 +139,7 @@ IF
 InParty(Myself)
 CombatCounter(0)
 See(Player1)
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("YYoshiWasLoved","GLOBAL",1)
 RealGlobalTimerExpired("YYTime","GLOBAL")
@@ -151,7 +158,7 @@ IF
 InParty(Myself)
 CombatCounter(0)
 See(Player1)
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("SaradushSacked","GLOBAL",1)
 Global("YYSaraushTalk","GLOBAL",0)
@@ -165,7 +172,7 @@ IF
 InParty(Myself)
 CombatCounter(0)
 See(Player1)
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("SaradushSacked","GLOBAL",1)
 RealGlobalTimerExpired("YYSaradushTalkTime","GLOBAL")
@@ -189,7 +196,7 @@ AreaCheck("AR5507")
 InParty(Myself)
 CombatCounter(0)
 See(Player1)
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("YYPoorTalk","GLOBAL",0)
 THEN
@@ -211,7 +218,7 @@ InParty(Myself)
 CombatCounter(0)
 See(Player1)
 !See("YYoshBro")
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("YYosh25BrotherEncounter","GLOBAL",2)
 THEN
@@ -225,7 +232,7 @@ InParty(Myself)
 CombatCounter(0)
 See(Player1)
 Dead("chalrv01")
-!StateCheck("YYOSH25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("YYoshFinalTalk","GLOBAL",0)
 THEN

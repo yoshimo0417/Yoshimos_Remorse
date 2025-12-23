@@ -1,10 +1,10 @@
 IF 
-InParty("YYosh25")
-See("YYosh25")
+InParty("YOSHIMO")
+See("YOSHIMO")
 Global("YYosh25BrotherEncounter","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("YYosh25BrotherEncounter","GLOBAL",1)
-Dialogue("YYosh25")
+Dialogue("YOSHIMO")
 END
 

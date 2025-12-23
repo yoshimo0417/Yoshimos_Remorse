@@ -4,7 +4,7 @@ BEGIN YYosh25B
 
 CHAIN IF ~InParty("AERIE")
 See("AERIE")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("AERIE",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25AerieTOB","GLOBAL",0)~ THEN YYosh25B AerieYYoshToB01
@@ -20,7 +20,7 @@ EXIT
 
 CHAIN IF ~InParty("AERIE")
 See("AERIE")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("AERIE",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25AerieTOB","GLOBAL",1)~ THEN YYosh25B AerieYYoshToB02
@@ -42,7 +42,7 @@ EXIT
 CHAIN IF ~InParty("ANOMEN")
 See("ANOMEN")
 !Alignment("Anomen",MASK_LAWFUL)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("ANOMEN",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25AnomenTOB","GLOBAL",0)~ THEN YYosh25B AnomenYYoshToB01
@@ -57,7 +57,7 @@ EXIT
 CHAIN IF ~InParty("ANOMEN")
 See("ANOMEN")
 !Alignment("Anomen",MASK_LAWFUL)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("ANOMEN",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25AnomenTOB","GLOBAL",1)~ THEN YYosh25B AnomenYYoshToB02
@@ -81,7 +81,7 @@ EXIT
 
 CHAIN IF ~InParty("CERND")
 See("CERND")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("CERND",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25CerndTOB","GLOBAL",0)~ THEN YYosh25B CerndYYoshToB01
@@ -95,7 +95,7 @@ EXIT
 
 CHAIN IF ~InParty("CERND")
 See("CERND")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("CERND",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25CerndTOB","GLOBAL",1)~ THEN YYosh25B CerndYYoshToB02
@@ -110,7 +110,7 @@ EXIT
 
 CHAIN IF ~InParty("EDWIN")
 See("EDWIN")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("EDWIN",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25EdwinTOB","GLOBAL",0)~ THEN YYosh25B EdwinYYoshToB01
@@ -125,7 +125,7 @@ EXIT
 
 CHAIN IF ~InParty("EDWIN")
 See("EDWIN")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("EDWIN",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25EdwinTOB","GLOBAL",1)~ THEN YYosh25B EdwinYYoshToB02
@@ -149,7 +149,7 @@ EXIT
 
 CHAIN IF ~InParty("haerdalis")
 See("haerdalis")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("haerdalis",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25HaerdalisTOB","GLOBAL",0)~ THEN YYosh25B HaerdaYYoshToB01
@@ -163,7 +163,7 @@ EXIT
 
 CHAIN IF ~InParty("haerdalis")
 See("haerdalis")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("haerdalis",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25HaerdalisTOB","GLOBAL",1)~ THEN YYosh25B HaerdaYYoshToB02
@@ -178,7 +178,7 @@ EXIT
 
 CHAIN IF ~InParty("imoen2")
 See("imoen2")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("imoen2",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25ImoenTOB","GLOBAL",0)~ THEN YYosh25B ImoenYYoshToB01
@@ -192,7 +192,7 @@ EXIT
 
 CHAIN IF ~InParty("imoen2")
 See("imoen2")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("imoen2",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25ImoenTOB","GLOBAL",1)~ THEN YYosh25B ImoenYYoshToB02
@@ -217,7 +217,7 @@ EXIT
 
 CHAIN IF ~InParty("jaheira")
 See("jaheira")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("jaheira",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25BaheiraTOB","GLOBAL",0)~ THEN YYosh25B JaheiraYYoshToB01
@@ -231,7 +231,7 @@ EXIT
 
 CHAIN IF ~InParty("jaheira")
 See("jaheira")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("jaheira",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25BaheiraTOB","GLOBAL",1)~ THEN YYosh25B JaheiraYYoshToB02
@@ -248,9 +248,9 @@ EXIT
 
 ////Jan
 
-CHAIN IF ~InParty("YYosh25")
-See("YYosh25")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+CHAIN IF ~InParty("YOSHIMO")
+See("YOSHIMO")
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("jan",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25BanTOB","GLOBAL",0)~ THEN BJAN25 JanYYoshToB01
@@ -264,9 +264,9 @@ DO ~SetGlobal("YYosh25BanTOB","GLOBAL",1)~
 ==YYosh25B ~Ilmater, why...~
 EXIT
 
-CHAIN IF ~InParty("YYosh25")
-See("YYosh25")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+CHAIN IF ~InParty("YOSHIMO")
+See("YOSHIMO")
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("jan",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25BanTOB","GLOBAL",1)~ THEN BJAN25 JanYYoshToB02
@@ -281,7 +281,7 @@ EXIT
 
 CHAIN IF ~InParty("keldorn")
 See("keldorn")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("keldorn",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25KeldornTOB","GLOBAL",0)~ THEN YYosh25B KeldornYYoshToB01
@@ -297,7 +297,7 @@ EXIT
 
 CHAIN IF ~InParty("keldorn")
 See("keldorn")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("keldorn",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25KeldornTOB","GLOBAL",1)~ THEN YYosh25B KeldornYYoshToB02
@@ -311,7 +311,7 @@ EXIT
 
 CHAIN IF ~InParty("korgan")
 See("korgan")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("korgan",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25KorganTOB","GLOBAL",0)~ THEN BKorga25 KorganYYoshToB01
@@ -325,7 +325,7 @@ EXIT
 
 CHAIN IF ~InParty("korgan")
 See("korgan")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("korgan",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25KorganTOB","GLOBAL",1)~ THEN BKorga25 KorganYYoshToB02
@@ -338,7 +338,7 @@ EXIT
 
 CHAIN IF ~InParty("mazzy")
 See("mazzy")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("mazzy",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25mazzyTOB","GLOBAL",0)~ THEN YYosh25B MazzyYYoshToB01
@@ -352,7 +352,7 @@ EXIT
 
 CHAIN IF ~InParty("mazzy")
 See("mazzy")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("mazzy",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25mazzyTOB","GLOBAL",1)~ THEN YYosh25B MazzyYYoshToB02
@@ -366,7 +366,7 @@ END
 
 CHAIN IF ~InParty("minsc")
 See("minsc")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("minsc",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25MinscTOB","GLOBAL",0)~ THEN YYosh25B MinscYYoshToB01
@@ -380,7 +380,7 @@ EXIT
 
 CHAIN IF ~InParty("minsc")
 See("minsc")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("minsc",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25MinscTOB","GLOBAL",1)~ THEN YYosh25B MinscYYoshToB02
@@ -397,7 +397,7 @@ EXIT
 CHAIN IF ~InParty("nalia")
 See("nalia")
 !StateCheck("nalia",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25NaliaTOB","GLOBAL",0)~ THEN YYosh25B NaliaYYoshToB01
 ~Nalia, I must admit that I could barely imagine you wearing pleated dresses. These days, adventuring gear seems to suit you better.~
@@ -412,7 +412,7 @@ EXIT
 CHAIN IF ~InParty("nalia")
 See("nalia")
 !StateCheck("nalia",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25NaliaTOB","GLOBAL",1)~ THEN YYosh25B NaliaYYoshToB02
 ~I must say, Nalia, that I believe your father would be proud of you.~
@@ -430,7 +430,7 @@ EXIT
 CHAIN IF ~InParty("valygar")
 See("valygar")
 !StateCheck("valygar",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25ValygarTOB","GLOBAL",0)~ THEN YYosh25B ValygarYYoshToB01
 ~Eagle-eyed Valygar, tell me something. Are you wondering what happened to the Planar Sphere while you were away from Athkatla?~
@@ -444,7 +444,7 @@ EXIT
 CHAIN IF ~InParty("valygar")
 See("valygar")
 !StateCheck("valygar",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25ValygarTOB","GLOBAL",1)~ THEN YYosh25B ValygarYYoshToB02
 ~Valygar, the Eagle-eyed ranger - I asked you about the Sphere, but perhaps I should have asked you about Lavok. Is he still in your mind?~
@@ -455,10 +455,10 @@ EXIT
 
 ////Viconia
 
-CHAIN IF ~InParty("YYosh25")
-See("YYosh25")
+CHAIN IF ~InParty("YOSHIMO")
+See("YOSHIMO")
 !StateCheck("viconia",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25ViconiaTOB","GLOBAL",0)~ THEN BVicon25 ViconiaYYoshToB01
 ~I can see you looking at me, brane' gul. If you have something to say, say it.~
@@ -469,10 +469,10 @@ DO ~SetGlobal("YYosh25ViconiaTOB","GLOBAL",1)~
 ==BVicon25 ~Perhaps you should accept it as it is, brane' gul, as that may be the only kind of "admiration" you'll ever get.~
 EXIT
 
-CHAIN IF ~InParty("YYosh25")
-See("YYosh25")
+CHAIN IF ~InParty("YOSHIMO")
+See("YOSHIMO")
 !StateCheck("viconia",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25ViconiaTOB","GLOBAL",1)~ THEN BVicon25 ViconiaYYoshToB02
 ~...what nonsense are you insinuating , gul?~
@@ -487,10 +487,10 @@ EXIT
 
 ////Sarevok
 
-CHAIN IF ~InParty("YYosh25")
-See("YYosh25")
+CHAIN IF ~InParty("YOSHIMO")
+See("YOSHIMO")
 !StateCheck("SAREVOK",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25SarevTOB","GLOBAL",0)~ THEN BSarev25 SarevokWillling
 ~I can see that my <PRO_BROTHERSISTER> has grown into a habit of working with men that betrayed <PRO_HIMHER>. Ha! That can make this whole adventure even more amusing.~
@@ -500,10 +500,10 @@ DO ~SetGlobal("YYosh25SarevTOB","GLOBAL",1)~
 ==YYosh25B ~I would rather think of it as of a possibility rather than a foolish thing to do, Sarevok.~
 EXIT
 
-CHAIN IF ~InParty("YYosh25")
+CHAIN IF ~InParty("YOSHIMO")
 See("SAREVOK")
 !StateCheck("SAREVOK",CD_STATE_NOTVALID)
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25SarevTOB","GLOBAL",1)~ THEN YYosh25B SarevokWilling2
 ~Last we spoke, the topic was rather different than others, no?~
@@ -519,9 +519,9 @@ EXIT
 
 ////DORN
 
-CHAIN IF ~InParty("YYosh25")
-See("YYosh25")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+CHAIN IF ~InParty("YOSHIMO")
+See("YOSHIMO")
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("DORN",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25DornT","GLOBAL",0)~ THEN BDORN25 WillDorn25
@@ -531,9 +531,9 @@ DO ~SetGlobal("YYosh25DornT","GLOBAL",1)~
 == BDORN25 ~I will think of you, ghost, as someone who wasn't able to do his job.~
 EXIT
 
-CHAIN IF ~InParty("YYosh25")
+CHAIN IF ~InParty("YOSHIMO")
 See("DORN")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("DORN",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25DornT","GLOBAL",1)~ THEN YYosh25B WillDorn25Next
@@ -548,7 +548,7 @@ EXIT
 
 CHAIN IF ~InParty("NEERA")
 See("NEERA")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("NEERA",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25NEERAT","GLOBAL",0)~ THEN YYosh25B WillNeera25
@@ -563,8 +563,8 @@ DO ~SetGlobal("YYosh25NEERAT","GLOBAL",1)~
 EXIT
 
 CHAIN IF ~InParty("NEERA")
-See("YYosh25")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+See("YOSHIMO")
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("NEERA",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25NEERAT","GLOBAL",1)~ THEN BNEERA25 WillNeera25Next
@@ -582,7 +582,7 @@ EXIT
 
 CHAIN IF ~InParty("RASAAD")
 See("RASAAD")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("RASAAD",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25RASAADt","GLOBAL",0)~ THEN YYosh25B WillRasaad25
@@ -594,8 +594,8 @@ DO ~SetGlobal("YYosh25RASAADt","GLOBAL",1)~
 EXIT
 
 CHAIN IF ~InParty("RASAAD")
-See("YYosh25")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+See("YOSHIMO")
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("RASAAD",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25RASAADt","GLOBAL",1)~ THEN BRASAA25 WillRasaad25Next
@@ -612,7 +612,7 @@ EXIT
 
 CHAIN IF ~InParty("HEXXAT")
 See("HEXXAT")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("HEXXAT",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25HEXXATT","GLOBAL",0)~ THEN YYosh25B YYosh25Hexxat25
@@ -626,7 +626,7 @@ EXIT
 
 CHAIN IF ~InParty("HEXXAT")
 See("HEXXAT")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("HEXXAT",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25HEXXATT","GLOBAL",1)~ THEN YYosh25B YYosh25Hexxat25Next
@@ -643,7 +643,7 @@ EXIT
 
 CHAIN IF ~InParty("WILSON")
 See("WILSON")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("WILSON",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25WILSON","GLOBAL",0)~ THEN YYosh25B YYosh25WILSON2
@@ -658,7 +658,7 @@ EXIT
 
 CHAIN IF ~InParty("WILSON")
 See("WILSON")
-!StateCheck("YYosh25",CD_STATE_NOTVALID)
+!StateCheck("YOSHIMO",CD_STATE_NOTVALID)
 !StateCheck("WILSON",CD_STATE_NOTVALID)
 CombatCounter(0)
 Global("YYosh25WILSON","GLOBAL",1)~ THEN YYosh25B YYosh25WILSON2Next

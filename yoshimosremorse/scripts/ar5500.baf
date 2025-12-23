@@ -1,5 +1,5 @@
 IF
-   InParty("YYosh25")
+   InParty("YOSHIMO")
    Global("YYoshBroExists","GLOBAL",0)
    !Global("YoshimoRomanceActive","GLOBAL",2)
    !Global("YoshimoRomanceActive","GLOBAL",3)

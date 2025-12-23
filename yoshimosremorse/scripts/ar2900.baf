@@ -1,0 +1,7 @@
+IF
+Global("YYYoshimoDoomed","GLOBAL",0)
+!Global("yoshimos_heart","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("YYYoshimoDoomed","GLOBAL",1)
+END
